@@ -8,7 +8,7 @@ Offline maternal assessment and auditable referral coordination using synthetic 
 - [`PROJECT_DESCRIPTION.md`](PROJECT_DESCRIPTION.md) — Complete system overview, problem statement, and scope.
 - [`EXECUTIVE_SUMMARY.md`](EXECUTIVE_SUMMARY.md) — Executive summary of verified engineering and clinical safety properties.
 - [`TECHNICAL_ARCHITECTURE.md`](TECHNICAL_ARCHITECTURE.md) — Android, Spring Boot, PostgreSQL, Next.js, and Python research architecture.
-- [`CLINICAL_SAFETY.md`](CLINICAL_SAFETY.md) — Deterministic safety rules (`v1.0.0-ng133-research`), OR boundary semantics, and abstention guarantees.
+- [`CLINICAL_SAFETY.md`](CLINICAL_SAFETY.md) — Deterministic safety rules (`vitalink-rules-1.0.0`), OR boundary semantics, and abstention guarantees.
 - [`ECONOMIC_MODEL.md`](ECONOMIC_MODEL.md) — Illustrative `INR 7.78/screening` unit allocation model with volume sensitivity and explicit exclusions.
 - [`DEMO_SCRIPT_3_MIN.md`](DEMO_SCRIPT_3_MIN.md) — Reproducible 3-minute live demonstration sequence.
 - [`JUDGE_QA.md`](JUDGE_QA.md) — Evidence-backed responses to clinical, technical, AI, and operational judge questions.

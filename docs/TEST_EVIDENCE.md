@@ -27,10 +27,10 @@ This document records all executed verification commands, exit codes, exact test
 
 All four language implementations (`Kotlin`, `Java`, `TypeScript`, and `Python`) explicitly verify the severe blood-pressure boundary quadrant around `160 mmHg` systolic and `110 mmHg` diastolic using `OR` (never `AND`) semantics:
 
-- **`159/109 mmHg`**: Below severe threshold on both axes (`ELEVATED_SYSTOLIC_BP`, `ELEVATED_DIASTOLIC_BP`) -> `PROMPT_CLINICAL_REVIEW` (never `URGENT_REFERRAL` unless concerning symptoms are present).
-- **`160/109 mmHg`**: Severe systolic (`>= 160 mmHg`) with diastolic below `110 mmHg` -> **`URGENT_REFERRAL`** (`SEVERE_SYSTOLIC_BP` + `ELEVATED_DIASTOLIC_BP`).
-- **`159/110 mmHg`**: Severe diastolic (`>= 110 mmHg`) with systolic below `160 mmHg` -> **`URGENT_REFERRAL`** (`ELEVATED_SYSTOLIC_BP` + `SEVERE_DIASTOLIC_BP`).
-- **`160/110 mmHg`**: Severe on both axes -> **`URGENT_REFERRAL`** (`SEVERE_SYSTOLIC_BP` + `SEVERE_DIASTOLIC_BP`).
+- **`159/109 mmHg`**: Below severe threshold on both axes (`ELEVATED_SYSTOLIC_BP`, `ELEVATED_DIASTOLIC_BP`) -> `REVIEW_REQUIRED` (never `URGENT` unless concerning symptoms are present).
+- **`160/109 mmHg`**: Severe systolic (`>= 160 mmHg`) with diastolic below `110 mmHg` -> **`URGENT`** (`SEVERE_SYSTOLIC_BP` + `ELEVATED_DIASTOLIC_BP`).
+- **`159/110 mmHg`**: Severe diastolic (`>= 110 mmHg`) with systolic below `160 mmHg` -> **`URGENT`** (`ELEVATED_SYSTOLIC_BP` + `SEVERE_DIASTOLIC_BP`).
+- **`160/110 mmHg`**: Severe on both axes -> **`URGENT`** (`SEVERE_SYSTOLIC_BP` + `SEVERE_DIASTOLIC_BP`).
 
 Verified in:
 - Kotlin: `apps/android/domain/src/test/kotlin/org/vitalink/domain/ClinicalRulesTest.kt` (`exactSevereOrBoundaries159And160By109And110`)
