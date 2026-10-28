@@ -27,6 +27,6 @@ test_tied_predictions (test_research.MetricTests.test_tied_predictions) ... ok
 test_undefined_denominators_remain_null (test_research.MetricTests.test_undefined_denominators_remain_null) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.013s
+Ran 27 tests in 0.025s
 
 OK

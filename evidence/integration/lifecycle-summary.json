@@ -5,7 +5,7 @@
   "failures": 0,
   "errors": 0,
   "skipped": 0,
-  "duration_seconds": 5.697171211242676,
+  "duration_seconds": 4.782777547836304,
   "success": true,
   "not_proven": "This harness is not Android process-death, Android network recovery or browser evidence."
 }

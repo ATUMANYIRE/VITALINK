@@ -36,6 +36,6 @@ test_rule_14_elevated_diastolic (__main__.LifecycleTests.test_rule_14_elevated_d
 test_rule_15_no_trigger (__main__.LifecycleTests.test_rule_15_no_trigger) ... ok
 
 ----------------------------------------------------------------------
-Ran 36 tests in 5.696s
+Ran 36 tests in 4.782s
 
 OK

@@ -138,29 +138,67 @@ function Login({
         <div className="brand">
           <SymbolMark />
           <span className="wordmark">
-            VITALINK<span>MATERNAL CARE NETWORK</span>
+            VITALINK<span>MATERNAL &amp; NEWBORN EARLY-WARNING</span>
           </span>
         </div>
-        <div>
-          <p className="eyebrow">From community to clinical care</p>
+        <div className="landing-hero">
+          <div className="maternal-tag">
+            <span className="heart-icon" aria-hidden="true">♥</span>
+            <span>Mother &amp; Child Health Network</span>
+          </div>
           <h1>
-            Every referral.
+            Protecting Mother &amp; Baby.
             <br />
-            <em>A person to care for.</em>
+            <em>Where care begins.</em>
           </h1>
           <p className="story-text">
-            A shared clinical workspace for maternal screening referrals. Review
-            what was measured, understand what triggered concern, and confirm
-            that a clinician has received the handoff.
+            An offline-first clinical early-warning system bridging frontline community health workers at village doorsteps with regional hospital physicians. Instant preeclampsia detection with zero network latency.
           </p>
-          <div className="journey" aria-label="Referral workflow">
-            <span>Screen offline</span>
-            <span>Deliver securely</span>
-            <span>Acknowledge explicitly</span>
+          <div className="maternal-stats-grid">
+            <div className="stat-box">
+              <strong>830+</strong>
+              <span>Mothers lost daily worldwide</span>
+            </div>
+            <div className="stat-box">
+              <strong>0s</strong>
+              <span>On-device triage latency</span>
+            </div>
+            <div className="stat-box">
+              <strong>100%</strong>
+              <span>Encrypted offline outbox</span>
+            </div>
+          </div>
+          <div className="maternal-pillars">
+            <div className="pillar-card">
+              <div className="pillar-badge">🤰</div>
+              <div>
+                <strong>Early Preeclampsia Detection</strong>
+                <p>NICE NG133 deterministic rules: BP &ge; 160/110 mmHg and red-flag maternal symptoms trigger immediate hospital escalation.</p>
+              </div>
+            </div>
+            <div className="pillar-card">
+              <div className="pillar-badge">📱</div>
+              <div>
+                <strong>Frontline Doorstep Screening</strong>
+                <p>Field workers screen offline with encrypted SQLite Room database and Android KeyStore AES-256-GCM protection.</p>
+              </div>
+            </div>
+            <div className="pillar-card">
+              <div className="pillar-badge">🏥</div>
+              <div>
+                <strong>Auditable Clinician Handoff</strong>
+                <p>Hospital doctors review raw vital measurements, rule trigger reasons, and sign explicit two-step acknowledgments.</p>
+              </div>
+            </div>
+          </div>
+          <div className="landing-downloads">
+            <a href="/app-debug.apk" className="download-pill" download>
+              <span>📱 Download Android Mobile APK (Field App)</span>
+            </a>
           </div>
         </div>
         <p className="prototype-label">
-          HEALTH HACKATHON 3.0 · RESEARCH PROTOTYPE
+          HEALTH HACKATHON 3.0 · VIT BHOPAL UNIVERSITY · RESEARCH PROTOTYPE
         </p>
       </aside>
       <main id="main" className="login-main">

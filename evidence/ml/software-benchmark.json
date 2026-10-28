@@ -14,9 +14,9 @@
   "clock": "perf_counter_ns",
   "input": "Synthetic systolic160 diastolic90 gestationalWeeks32 no symptoms",
   "unit": "milliseconds",
-  "p50": 0.006,
-  "p95": 0.0106,
-  "p99": 0.023,
-  "max": 0.2973,
+  "p50": 0.004,
+  "p95": 0.0049,
+  "p99": 0.0079,
+  "max": 0.0943,
   "limitations": "Microbenchmark in this shared build environment; not a device or clinical benchmark."
 }

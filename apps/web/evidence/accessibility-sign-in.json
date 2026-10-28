@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-28T07:21:27.096Z",
+  "timestamp": "2026-10-28T10:33:11.992Z",
   "url": "http://localhost:3017/",
   "toolOptions": {
     "runOnly": {
@@ -846,46 +846,6 @@
               "#__next-route-announcer__"
             ]
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            },
-            {
-              "id": "aria-no-deprecated-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "No deprecated ARIA attributes are used"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<div class=\"journey\" aria-label=\"Referral workflow\"><span>Screen offline</span><span>Deliver securely</span><span>Acknowledge explicitly</span></div>",
-          "target": [
-            ".journey"
-          ]
         }
       ]
     },
@@ -924,24 +884,6 @@
               "next-route-announcer",
               "#__next-route-announcer__"
             ]
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"journey\" aria-label=\"Referral workflow\"><span>Screen offline</span><span>Deliver securely</span><span>Acknowledge explicitly</span></div>",
-          "target": [
-            ".journey"
           ]
         }
       ]
@@ -1100,6 +1042,38 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<span class=\"heart-icon\" aria-hidden=\"true\">♥</span>",
+          "target": [
+            ".heart-icon"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open"
+            },
+            {
+              "id": "focusable-disabled",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            },
+            {
+              "id": "focusable-not-tabbable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<span class=\"small-cross\" aria-hidden=\"true\">+</span>",
           "target": [
             ".small-cross"
@@ -1141,7 +1115,7 @@
     },
     {
       "id": "aria-prohibited-attr",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.aria",
         "wcag2a",
@@ -1320,38 +1294,6 @@
               "#__next-route-announcer__"
             ]
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"journey\" aria-label=\"Referral workflow\"><span>Screen offline</span><span>Deliver securely</span><span>Acknowledge explicitly</span></div>",
-          "target": [
-            ".journey"
-          ]
         }
       ]
     },
@@ -1390,24 +1332,6 @@
               "next-route-announcer",
               "#__next-route-announcer__"
             ]
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"journey\" aria-label=\"Referral workflow\"><span>Screen offline</span><span>Deliver securely</span><span>Acknowledge explicitly</span></div>",
-          "target": [
-            ".journey"
           ]
         }
       ]
@@ -1542,7 +1466,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1>Every referral.<br><em>A person to care for.</em></h1>",
+                  "html": "<h1>Protecting Mother &amp; Baby.<br><em>Where care begins.</em></h1>",
                   "target": [
                     "h1"
                   ]
@@ -1606,22 +1530,22 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 12.18,
+                "fgColor": "#0f172a",
+                "bgColor": "#f8fafc",
+                "contrastRatio": 17.06,
                 "fontSize": "15.8pt (21px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 12.18"
+              "message": "Element has sufficient color contrast of 17.06"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"wordmark\">VITALINK<span>MATERNAL CARE NETWORK</span></span>",
+          "html": "<span class=\"wordmark\">VITALINK<span>MATERNAL &amp; NEWBORN EARLY-WARNING</span></span>",
           "target": [
             ".wordmark"
           ]
@@ -1631,22 +1555,22 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 12.18,
+                "fgColor": "#0f172a",
+                "bgColor": "#f8fafc",
+                "contrastRatio": 17.06,
                 "fontSize": "6.0pt (8px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 12.18"
+              "message": "Element has sufficient color contrast of 17.06"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>MATERNAL CARE NETWORK</span>",
+          "html": "<span>MATERNAL &amp; NEWBORN EARLY-WARNING</span>",
           "target": [
             ".wordmark > span"
           ]
@@ -1656,24 +1580,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#465458",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 6.79,
-                "fontSize": "7.5pt (10px)",
-                "fontWeight": "normal",
+                "fgColor": "#9f1239",
+                "bgColor": "#fff1f2",
+                "contrastRatio": 7.29,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 6.79"
+              "message": "Element has sufficient color contrast of 7.29"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"eyebrow\">From community to clinical care</p>",
+          "html": "<span>Mother &amp; Child Health Network</span>",
           "target": [
-            "div:nth-child(2) > .eyebrow"
+            ".maternal-tag > span:nth-child(2)"
           ]
         },
         {
@@ -1681,22 +1605,22 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 12.18,
+                "fgColor": "#0f172a",
+                "bgColor": "#f8fafc",
+                "contrastRatio": 17.06,
                 "fontSize": "48.6pt (64.8px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 12.18"
+              "message": "Element has sufficient color contrast of 17.06"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1>Every referral.<br><em>A person to care for.</em></h1>",
+          "html": "<h1>Protecting Mother &amp; Baby.<br><em>Where care begins.</em></h1>",
           "target": [
             "h1"
           ]
@@ -1706,22 +1630,22 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#43766c",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 4.48,
+                "fgColor": "#047857",
+                "bgColor": "#f8fafc",
+                "contrastRatio": 5.24,
                 "fontSize": "48.6pt (64.8px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 4.48"
+              "message": "Element has sufficient color contrast of 5.24"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>A person to care for.</em>",
+          "html": "<em>Where care begins.</em>",
           "target": [
             "em"
           ]
@@ -1731,22 +1655,22 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#52615f",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 5.61,
+                "fgColor": "#475569",
+                "bgColor": "#f8fafc",
+                "contrastRatio": 7.24,
                 "fontSize": "11.3pt (15px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.61"
+              "message": "Element has sufficient color contrast of 7.24"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"story-text\">A shared clinical workspace for maternal screening referrals. Review what was measured, understand what triggered concern, and confirm that a clinician has received the handoff.</p>",
+          "html": "<p class=\"story-text\">An offline-first clinical early-warning system bridging frontline community health workers at village doorsteps with regional hospital physicians. Instant preeclampsia detection with zero network latency.</p>",
           "target": [
             ".story-text"
           ]
@@ -1756,24 +1680,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#48665b",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 5.45,
-                "fontSize": "7.5pt (10px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "fgColor": "#047857",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.48,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.45"
+              "message": "Element has sufficient color contrast of 5.48"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Screen offline</span>",
+          "html": "<strong>830+</strong>",
           "target": [
-            ".journey > span:nth-child(1)"
+            ".stat-box:nth-child(1) > strong"
           ]
         },
         {
@@ -1781,24 +1705,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#48665b",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 5.45,
-                "fontSize": "7.5pt (10px)",
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "8.3pt (11px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.45"
+              "message": "Element has sufficient color contrast of 7.57"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Deliver securely</span>",
+          "html": "<span>Mothers lost daily worldwide</span>",
           "target": [
-            ".journey > span:nth-child(2)"
+            ".stat-box:nth-child(1) > span"
           ]
         },
         {
@@ -1806,24 +1730,274 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#48665b",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 5.45,
-                "fontSize": "7.5pt (10px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "fgColor": "#047857",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.48,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.45"
+              "message": "Element has sufficient color contrast of 5.48"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Acknowledge explicitly</span>",
+          "html": "<strong>0s</strong>",
           "target": [
-            "span:nth-child(3)"
+            ".stat-box:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.57"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>On-device triage latency</span>",
+          "target": [
+            ".stat-box:nth-child(2) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#047857",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.48,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.48"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>100%</strong>",
+          "target": [
+            ".stat-box:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.57"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Encrypted offline outbox</span>",
+          "target": [
+            ".stat-box:nth-child(3) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.85"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Early Preeclampsia Detection</strong>",
+          "target": [
+            ".pillar-card:nth-child(1) > div:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.57"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>NICE NG133 deterministic rules: BP ≥ 160/110 mmHg and red-flag maternal symptoms trigger immediate hospital escalation.</p>",
+          "target": [
+            ".pillar-card:nth-child(1) > div:nth-child(2) > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.85"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Frontline Doorstep Screening</strong>",
+          "target": [
+            ".pillar-card:nth-child(2) > div:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.57"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Field workers screen offline with encrypted SQLite Room database and Android KeyStore AES-256-GCM protection.</p>",
+          "target": [
+            ".pillar-card:nth-child(2) > div:nth-child(2) > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.85"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Auditable Clinician Handoff</strong>",
+          "target": [
+            ".pillar-card:nth-child(3) > div:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.57"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Hospital doctors review raw vital measurements, rule trigger reasons, and sign explicit two-step acknowledgments.</p>",
+          "target": [
+            ".pillar-card:nth-child(3) > div:nth-child(2) > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#065f46",
+                "contrastRatio": 7.68,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.68"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>📱 Download Android Mobile APK (Field App)</span>",
+          "target": [
+            ".download-pill > span"
           ]
         },
         {
@@ -1832,21 +2006,21 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#586d61",
-                "bgColor": "#eeefe8",
-                "contrastRatio": 4.8,
+                "bgColor": "#f8fafc",
+                "contrastRatio": 5.31,
                 "fontSize": "6.8pt (9px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 4.8"
+              "message": "Element has sufficient color contrast of 5.31"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"prototype-label\">HEALTH HACKATHON 3.0 · RESEARCH PROTOTYPE</p>",
+          "html": "<p class=\"prototype-label\">HEALTH HACKATHON 3.0 · VIT BHOPAL UNIVERSITY · RESEARCH PROTOTYPE</p>",
           "target": [
             ".prototype-label"
           ]
@@ -1856,16 +2030,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#465458",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 7.6,
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
                 "fontSize": "7.5pt (10px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 7.6"
+              "message": "Element has sufficient color contrast of 7.57"
             }
           ],
           "all": [],
@@ -1873,7 +2047,7 @@
           "impact": null,
           "html": "<p class=\"eyebrow\">Clinical workspace</p>",
           "target": [
-            ".login-card > .eyebrow"
+            ".eyebrow"
           ]
         },
         {
@@ -1881,16 +2055,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 13.62,
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
                 "fontSize": "31.5pt (42px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.62"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -1906,16 +2080,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#465458",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 7.6,
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
                 "fontSize": "10.5pt (14px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 7.6"
+              "message": "Element has sufficient color contrast of 7.57"
             }
           ],
           "all": [],
@@ -1931,16 +2105,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 13.62,
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.62"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -1956,16 +2130,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
+                "fgColor": "#0f172a",
                 "bgColor": "#ffffff",
-                "contrastRatio": 14.1,
+                "contrastRatio": 17.85,
                 "fontSize": "10.5pt (14px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.1"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -1981,16 +2155,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 13.62,
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.62"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -2006,16 +2180,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
+                "fgColor": "#0f172a",
                 "bgColor": "#ffffff",
-                "contrastRatio": 14.1,
+                "contrastRatio": 17.85,
                 "fontSize": "10.5pt (14px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.1"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -2032,15 +2206,15 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#ffffff",
-                "bgColor": "#1b343e",
-                "contrastRatio": 13.06,
+                "bgColor": "#0f172a",
+                "contrastRatio": 17.85,
                 "fontSize": "10.5pt (14px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.06"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -2056,16 +2230,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#465458",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 7.6,
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
                 "fontSize": "8.3pt (11px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 7.6"
+              "message": "Element has sufficient color contrast of 7.57"
             }
           ],
           "all": [],
@@ -2081,16 +2255,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#192e38",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 13.62,
+                "fgColor": "#0f172a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.85,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.62"
+              "message": "Element has sufficient color contrast of 17.85"
             }
           ],
           "all": [],
@@ -2098,7 +2272,7 @@
           "impact": null,
           "html": "<strong>Synthetic demonstration only</strong>",
           "target": [
-            "strong"
+            ".research-note > strong"
           ]
         },
         {
@@ -2106,16 +2280,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#465458",
-                "bgColor": "#fcfbf8",
-                "contrastRatio": 7.6,
+                "fgColor": "#475569",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.57,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 7.6"
+              "message": "Element has sufficient color contrast of 7.57"
             }
           ],
           "all": [],
@@ -2508,7 +2682,33 @@
           "impact": null,
           "html": "<a class=\"skip-link\" href=\"#main\">Skip to main content</a>",
           "target": [
-            "a"
+            ".skip-link"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/app-debug.apk\" class=\"download-pill\" download=\"\"><span>📱 Download Android Mobile APK (Field App)</span></a>",
+          "target": [
+            ".download-pill"
           ]
         }
       ]
@@ -2590,50 +2790,6 @@
     }
   ],
   "incomplete": [
-    {
-      "id": "aria-prohibited-attr",
-      "impact": "serious",
-      "tags": [
-        "cat.aria",
-        "wcag2a",
-        "wcag412",
-        "EN-301-549",
-        "EN-9.4.1.2",
-        "RGAAv4",
-        "RGAA-7.1.1"
-      ],
-      "description": "Ensure ARIA attributes are not prohibited for an element's role",
-      "help": "Elements must only use permitted ARIA attributes",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": {
-                "role": null,
-                "nodeName": "div",
-                "messageKey": "noRoleSingular",
-                "prohibited": [
-                  "aria-label"
-                ]
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
-            }
-          ],
-          "impact": "serious",
-          "html": "<div class=\"journey\" aria-label=\"Referral workflow\"><span>Screen offline</span><span>Deliver securely</span><span>Acknowledge explicitly</span></div>",
-          "target": [
-            ".journey"
-          ],
-          "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
-        }
-      ]
-    },
     {
       "id": "color-contrast",
       "impact": "serious",
