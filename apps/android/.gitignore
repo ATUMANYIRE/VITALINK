@@ -1,0 +1,6 @@
+.cache/
+.gradle/
+.gradle-home/
+local.properties
+**/build/
+*.log

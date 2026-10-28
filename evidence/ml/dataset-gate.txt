@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED",
+  "reasons": [
+    "Required assurance absent: authorized_for_research",
+    "Required assurance absent: independently_observed_outcome",
+    "Required assurance absent: patient_linkage_available",
+    "Required assurance absent: feature_timing_available",
+    "Required assurance absent: clinician_reviewed_outcome"
+  ],
+  "clinical_deployment_authorized": false
+}

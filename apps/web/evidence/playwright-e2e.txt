@@ -1,0 +1,11 @@
+
+Running 6 tests using 1 worker
+
+  Γ£ô  1 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:55:1 ΓÇ║ authenticated overview uses real records and protects session credentials (839ms)
+  Γ£ô  2 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:67:1 ΓÇ║ urgent referral detail preserves clinical escalation and server receipt distinction (1.4s)
+  Γ£ô  3 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:79:1 ΓÇ║ acknowledgment requires confirmation and updates only after the real server confirms (421ms)
+  Γ£ô  4 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:91:1 ΓÇ║ mobile layout and keyboard navigation remain accessible (705ms)
+  Γ£ô  5 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:103:1 ΓÇ║ cross-origin mutations and unauthenticated proxy reads are rejected (55ms)
+  Γ£ô  6 [desktop] ΓÇ║ tests\e2e\workspace.spec.ts:114:1 ΓÇ║ offline actions are disabled and reconnection refreshes stored state (343ms)
+
+  6 passed (8.7s)

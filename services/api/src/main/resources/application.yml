@@ -1,0 +1,55 @@
+server:
+  address: ${API_BIND_ADDRESS:127.0.0.1}
+  port: ${API_PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+    include-binding-errors: never
+  max-http-request-header-size: 16KB
+  tomcat:
+    max-http-form-post-size: 64KB
+    max-swallow-size: 64KB
+spring:
+  application:
+    name: vitalink-api
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 5000
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+    clean-disabled: true
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      fail-on-null-for-primitives: true
+      accept-float-as-int: false
+      fail-on-numbers-for-enums: true
+    mapper:
+      allow-coercion-of-scalars: false
+  mvc:
+    log-request-details: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,db
+logging:
+  level:
+    org.springframework.jdbc: WARN
+    org.springframework.security: WARN
+    org.apache.coyote.http11: ERROR
+vitalink:
+  bootstrap-users: ${VITALINK_BOOTSTRAP_USERS:[]}

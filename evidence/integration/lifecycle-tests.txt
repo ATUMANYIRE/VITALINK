@@ -1,0 +1,41 @@
+test_01_health_endpoint (__main__.LifecycleTests.test_01_health_endpoint) ... ok
+test_02_authentication_required (__main__.LifecycleTests.test_02_authentication_required) ... ok
+test_03_unknown_user_rejected (__main__.LifecycleTests.test_03_unknown_user_rejected) ... ok
+test_04_delivery_is_not_acknowledgment (__main__.LifecycleTests.test_04_delivery_is_not_acknowledgment) ... ok
+test_05_identical_retry_after_lost_response (__main__.LifecycleTests.test_05_identical_retry_after_lost_response) ... ok
+test_06_conflicting_retry_rejected (__main__.LifecycleTests.test_06_conflicting_retry_rejected) ... ok
+test_07_wrong_idempotency_key (__main__.LifecycleTests.test_07_wrong_idempotency_key) ... ok
+test_08_health_worker_cannot_acknowledge (__main__.LifecycleTests.test_08_health_worker_cannot_acknowledge) ... ok
+test_09_doctor_cannot_submit (__main__.LifecycleTests.test_09_doctor_cannot_submit) ... ok
+test_10_facility_object_authorization (__main__.LifecycleTests.test_10_facility_object_authorization) ... ok
+test_11_facility_submission_authorization (__main__.LifecycleTests.test_11_facility_submission_authorization) ... ok
+test_12_explicit_clinician_acknowledgment_and_history (__main__.LifecycleTests.test_12_explicit_clinician_acknowledgment_and_history) ... ok
+test_13_invalid_transition (__main__.LifecycleTests.test_13_invalid_transition) ... ok
+test_14_close_after_acknowledgment (__main__.LifecycleTests.test_14_close_after_acknowledgment) ... ok
+test_15_concurrent_duplicate_submissions (__main__.LifecycleTests.test_15_concurrent_duplicate_submissions) ... ok
+test_16_malformed_and_unknown_input (__main__.LifecycleTests.test_16_malformed_and_unknown_input) ... ok
+test_17_no_sensitive_cache (__main__.LifecycleTests.test_17_no_sensitive_cache) ... ok
+test_18_pagination_and_real_metrics (__main__.LifecycleTests.test_18_pagination_and_real_metrics) ... ok
+test_19_filtering_scoped_queue (__main__.LifecycleTests.test_19_filtering_scoped_queue) ... ok
+test_20_logout_revokes_token (__main__.LifecycleTests.test_20_logout_revokes_token) ... ok
+test_rule_00_systolic_boundary (__main__.LifecycleTests.test_rule_00_systolic_boundary) ... ok
+test_rule_01_diastolic_boundary (__main__.LifecycleTests.test_rule_01_diastolic_boundary) ... ok
+test_rule_02_below_severe (__main__.LifecycleTests.test_rule_02_below_severe) ... ok
+test_rule_03_normal_with_headache (__main__.LifecycleTests.test_rule_03_normal_with_headache) ... ok
+test_rule_04_normal_with_visual (__main__.LifecycleTests.test_rule_04_normal_with_visual) ... ok
+test_rule_05_normal_with_pain (__main__.LifecycleTests.test_rule_05_normal_with_pain) ... ok
+test_rule_06_normal_with_breathlessness (__main__.LifecycleTests.test_rule_06_normal_with_breathlessness) ... ok
+test_rule_07_normal_with_seizure (__main__.LifecycleTests.test_rule_07_normal_with_seizure) ... ok
+test_rule_08_normal_with_bleeding (__main__.LifecycleTests.test_rule_08_normal_with_bleeding) ... ok
+test_rule_09_normal_with_reduced_movement (__main__.LifecycleTests.test_rule_09_normal_with_reduced_movement) ... ok
+test_rule_10_missing_systolic (__main__.LifecycleTests.test_rule_10_missing_systolic) ... ok
+test_rule_11_missing_diastolic_severe (__main__.LifecycleTests.test_rule_11_missing_diastolic_severe) ... ok
+test_rule_12_missing_both (__main__.LifecycleTests.test_rule_12_missing_both) ... ok
+test_rule_13_elevated_systolic (__main__.LifecycleTests.test_rule_13_elevated_systolic) ... ok
+test_rule_14_elevated_diastolic (__main__.LifecycleTests.test_rule_14_elevated_diastolic) ... ok
+test_rule_15_no_trigger (__main__.LifecycleTests.test_rule_15_no_trigger) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 5.696s
+
+OK

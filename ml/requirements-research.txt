@@ -1,0 +1,4 @@
+# Optional, future cohort research only; not required by the rules-only release.
+# Versions must be reviewed and locked in a permitted environment before research execution.
+numpy>=1.26,<3
+scikit-learn>=1.5,<2

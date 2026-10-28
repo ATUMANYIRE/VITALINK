@@ -1,0 +1,17 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/863/maternal+health+risk",
+  "license": "CC BY 4.0 as stated by UCI; documentation reviewed, records not downloaded",
+  "population": "Hospitals, community clinics and maternal care settings in rural Bangladesh",
+  "outcome_definition": "RiskLevel: predicted risk intensity based on supplied attributes; not adjudicated maternal outcome",
+  "outcome_horizon": "Not provided in published schema",
+  "patient_id_definition": "No patient linkage in published variables",
+  "label_ascertainment": "Insufficient for independently observed maternal outcome prediction",
+  "ethics_review_reference": "Not assessed for VITALINK use",
+  "authorized_for_research": false,
+  "independently_observed_outcome": false,
+  "patient_linkage_available": false,
+  "feature_timing_available": false,
+  "clinician_reviewed_outcome": false,
+  "synthetic": false,
+  "decision": "BLOCKED"
+}

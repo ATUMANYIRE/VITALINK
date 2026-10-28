@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="org.vitalink.api.ReferralIntegrationTest" time="15.701" tests="25" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="os.name" value="Windows 11" />
+    <property name="java.version" value="21.0.10" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vendor" value="Microsoft" />
+    </properties>
+  <testcase name="identicalReplayAfterLostResponseDoesNotDuplicate" classname="org.vitalink.api.ReferralIntegrationTest" time="0.74">
+    </testcase>
+  <testcase name="healthAndReadinessAreAvailableWithoutInfrastructureDetails" classname="org.vitalink.api.ReferralIntegrationTest" time="0.09" />
+  <testcase name="invalidInputAndUnknownFieldsAreRejectedWithoutDisclosure" classname="org.vitalink.api.ReferralIntegrationTest" time="0.146" />
+  <testcase name="workerCannotAcknowledgeAndDoctorCannotSubmit" classname="org.vitalink.api.ReferralIntegrationTest" time="0.1" />
+  <testcase name="idempotencyHeaderIsRequiredAndMustMatch" classname="org.vitalink.api.ReferralIntegrationTest" time="0.054" />
+  <testcase name="missingAuthAndMalformedTokensAreRejected" classname="org.vitalink.api.ReferralIntegrationTest" time="0.033" />
+  <testcase name="databaseProtectsSnapshotsAgainstMutation" classname="org.vitalink.api.ReferralIntegrationTest" time="0.27" />
+  <testcase name="reversedPressuresDuplicateSymptomsAndFutureTimeAreRejected" classname="org.vitalink.api.ReferralIntegrationTest" time="0.079" />
+  <testcase name="migrationsValidateAndRepeatedMigrationIsNoOp" classname="org.vitalink.api.ReferralIntegrationTest" time="0.078">
+    </testcase>
+  <testcase name="doctorCannotReadAcknowledgeOrInspectOtherFacilityObject" classname="org.vitalink.api.ReferralIntegrationTest" time="0.113" />
+  <testcase name="fullReceiptAcknowledgmentClosureHistoryLifecycle" classname="org.vitalink.api.ReferralIntegrationTest" time="0.183" />
+  <testcase name="openApiSpecificationIsServed" classname="org.vitalink.api.ReferralIntegrationTest" time="0.057" />
+  <testcase name="largeRequestBodiesAreRejected" classname="org.vitalink.api.ReferralIntegrationTest" time="0.015" />
+  <testcase name="conflictingIdempotencySnapshotRejected" classname="org.vitalink.api.ReferralIntegrationTest" time="0.065" />
+  <testcase name="loginEndpointHashesPasswordsAndRejectsWrongCredentials" classname="org.vitalink.api.ReferralIntegrationTest" time="0.964" />
+  <testcase name="numericMeasurementsCannotBeSilentlyCoercedOrRounded" classname="org.vitalink.api.ReferralIntegrationTest" time="0.043" />
+  <testcase name="measurementHistoryIsScoped" classname="org.vitalink.api.ReferralIntegrationTest" time="0.072" />
+  <testcase name="sessionsAreHashedExpireAndAreRevocable" classname="org.vitalink.api.ReferralIntegrationTest" time="0.85" />
+  <testcase name="reusedAssessmentIdentifierCannotChangeImmutableSnapshot" classname="org.vitalink.api.ReferralIntegrationTest" time="0.034" />
+  <testcase name="symptomsAndMissingMeasurementsAreNotSuppressed" classname="org.vitalink.api.ReferralIntegrationTest" time="0.053" />
+  <testcase name="invalidStateTransitionIsConflict" classname="org.vitalink.api.ReferralIntegrationTest" time="0.032" />
+  <testcase name="administratorDoesNotGainCrossFacilityAccess" classname="org.vitalink.api.ReferralIntegrationTest" time="0.052" />
+  <testcase name="filteredPaginationAndMetricsUseAuthorizedStoredRecords" classname="org.vitalink.api.ReferralIntegrationTest" time="0.095" />
+  <testcase name="concurrentDuplicateRequestsCommitExactlyOneSnapshotAndReceipt" classname="org.vitalink.api.ReferralIntegrationTest" time="0.155" />
+  <testcase name="severeReferralIsReceivedButNeverAutomaticallyAcknowledged" classname="org.vitalink.api.ReferralIntegrationTest" time="0.032" />
+</testsuite>

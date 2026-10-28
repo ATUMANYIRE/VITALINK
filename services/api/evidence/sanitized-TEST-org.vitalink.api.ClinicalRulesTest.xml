@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="org.vitalink.api.ClinicalRulesTest" time="0.525" tests="26" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="os.name" value="Windows 11" />
+    <property name="java.version" value="21.0.10" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vendor" value="Microsoft" />
+    </properties>
+  <testcase name="severePressureWithOtherMissingMeasurementRemainsUrgent" classname="org.vitalink.api.ClinicalRulesTest" time="0.013" />
+  <testcase name="reversedPressuresCannotBePersisted" classname="org.vitalink.api.ClinicalRulesTest" time="0.005" />
+  <testcase name="invalidOtherValueDoesNotEraseSafetyEvaluation" classname="org.vitalink.api.ClinicalRulesTest" time="0.003" />
+  <testcase name="belowThresholdsMeansOnlyNoRuleTrigger" classname="org.vitalink.api.ClinicalRulesTest" time="0.002" />
+  <testcase name="futureMeasurementCannotBePersisted" classname="org.vitalink.api.ClinicalRulesTest" time="0.007" />
+  <testcase name="duplicateSymptomsCannotBePersisted" classname="org.vitalink.api.ClinicalRulesTest" time="0.007" />
+  <testcase name="missingPressureIsNotNegativeFinding" classname="org.vitalink.api.ClinicalRulesTest" time="0.002" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[1]" classname="org.vitalink.api.ClinicalRulesTest" time="0.051" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[2]" classname="org.vitalink.api.ClinicalRulesTest" time="0.001" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[3]" classname="org.vitalink.api.ClinicalRulesTest" time="0.011" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[4]" classname="org.vitalink.api.ClinicalRulesTest" time="0.005" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[5]" classname="org.vitalink.api.ClinicalRulesTest" time="0.005" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[6]" classname="org.vitalink.api.ClinicalRulesTest" time="0.01" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[7]" classname="org.vitalink.api.ClinicalRulesTest" time="0.006" />
+  <testcase name="eitherSeverePressureAlwaysTriggersUrgentAssessment(int, int)[8]" classname="org.vitalink.api.ClinicalRulesTest" time="0.009" />
+  <testcase name="elevatedPressureRequiresReview(int, int)[1]" classname="org.vitalink.api.ClinicalRulesTest" time="0.006" />
+  <testcase name="elevatedPressureRequiresReview(int, int)[2]" classname="org.vitalink.api.ClinicalRulesTest" time="0.002" />
+  <testcase name="elevatedPressureRequiresReview(int, int)[3]" classname="org.vitalink.api.ClinicalRulesTest" time="0.006" />
+  <testcase name="snapshotSymptomsCannotMutateAfterConstruction" classname="org.vitalink.api.ClinicalRulesTest" time="0.005" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[1]" classname="org.vitalink.api.ClinicalRulesTest" time="0.013" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[2]" classname="org.vitalink.api.ClinicalRulesTest" time="0.002" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[3]" classname="org.vitalink.api.ClinicalRulesTest" time="0.006" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[4]" classname="org.vitalink.api.ClinicalRulesTest" time="0.006" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[5]" classname="org.vitalink.api.ClinicalRulesTest" time="0.004" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[6]" classname="org.vitalink.api.ClinicalRulesTest" time="0.014" />
+  <testcase name="concerningSymptomsRemainUrgentWithNormalPressure(Symptom)[7]" classname="org.vitalink.api.ClinicalRulesTest" time="0.007" />
+</testsuite>

@@ -1,0 +1,11 @@
+{
+  "component": "Real HTTP API + PostgreSQL",
+  "api": "http://127.0.0.1:8087/api/v1",
+  "tests": 36,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 5.697171211242676,
+  "success": true,
+  "not_proven": "This harness is not Android process-death, Android network recovery or browser evidence."
+}

@@ -1,0 +1,59 @@
+{
+  "component": "Java 21 Spring Boot API",
+  "run_source": "services/api/evidence/package-result.txt",
+  "build": "PASS",
+  "build_finished": "2026-10-28T09:24:30+02:00",
+  "command": ". .\\services\\api\\scripts\\environment.ps1; Push-Location services\\api; .\\scripts\\maven.ps1 -o package",
+  "suites": [
+    {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "org.vitalink.api.AuthServiceTest",
+      "java_version": "21.0.10",
+      "duration_seconds": 5.1
+    },
+    {
+      "tests": 26,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "org.vitalink.api.ClinicalRulesTest",
+      "java_version": "21.0.10",
+      "duration_seconds": 0.525
+    },
+    {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "org.vitalink.api.PostgresContainerTest",
+      "java_version": "21.0.10",
+      "duration_seconds": 8.819
+    },
+    {
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "name": "org.vitalink.api.ReferralIntegrationTest",
+      "java_version": "21.0.10",
+      "duration_seconds": 15.701
+    }
+  ],
+  "total": 57,
+  "passed": 57,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "integration_backend": "Real local PostgreSQL 18.1 + Testcontainers postgres:17-alpine, no mocked HTTP/database",
+  "blocked": [
+    "Network dependency vulnerability scan unavailable in offline mode; Spring Security 6.5.0 cached compatibility pin requires review before clinical production deployment"
+  ],
+  "jar": {
+    "path": "services\\api\\target\\vitalink-api-0.1.0.jar",
+    "size_bytes": 32137746,
+    "sha256": "53eb07d496d1357190bfb4c6d37abc855448f2b0f3cb9317639e2bb333433048"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "name": "unit-tests",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "ml/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "dataset-gate",
+      "command": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "-m",
+        "vitalink_research.pipeline",
+        "--manifest",
+        "ml/data/dataset_assessment.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    }
+  ],
+  "shared_rule_cases": 16,
+  "software_benchmark": {
+    "component": "Python reference rules-only inference contract",
+    "not_measured": [
+      "Android cold-start",
+      "Android clinical engine latency",
+      "ONNX inference"
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "logical_cpus": 12,
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "sample_size": 10000,
+    "warmup_iterations": 1000,
+    "clock": "perf_counter_ns",
+    "input": "Synthetic systolic160 diastolic90 gestationalWeeks32 no symptoms",
+    "unit": "milliseconds",
+    "p50": 0.006,
+    "p95": 0.0106,
+    "p99": 0.023,
+    "max": 0.2973,
+    "limitations": "Microbenchmark in this shared build environment; not a device or clinical benchmark."
+  }
+}

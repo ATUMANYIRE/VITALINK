@@ -1,0 +1,34 @@
+
+> vitalink-clinical-workspace@1.0.0 build
+> node node_modules/next/dist/bin/next build --webpack
+
+Γû▓ Next.js 16.4.2 (webpack)
+Γ£ô Running next.config.ts took 46ms
+- Experiments (use with caution):
+  ┬╖ cpus: 1
+  Γ¿» useTypeScriptCli
+  Γ¿» webpackBuildWorker
+  Γ£ô workerThreads
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.0s
+  Running TypeScript ...
+  Finished TypeScript in 6.9s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/6) ...
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ ╞Æ /api/backend/[...path]
+Γö£ ╞Æ /api/login
+Γö£ ╞Æ /api/logout
+Γö£ ╞Æ /api/session
+Γöö ╞Æ /referrals/[id]
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

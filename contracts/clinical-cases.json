@@ -1,0 +1,179 @@
+[
+  {
+    "name": "systolic-boundary",
+    "systolic": 160,
+    "diastolic": 90,
+    "symptoms": [],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SEVERE_SYSTOLIC",
+      "ELEVATED_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "diastolic-boundary",
+    "systolic": 150,
+    "diastolic": 110,
+    "symptoms": [],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "ELEVATED_SYSTOLIC",
+      "SEVERE_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "below-severe",
+    "systolic": 159,
+    "diastolic": 109,
+    "symptoms": [],
+    "urgency": "REVIEW_REQUIRED",
+    "ruleTriggers": [
+      "ELEVATED_SYSTOLIC",
+      "ELEVATED_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "normal-with-headache",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "SEVERE_HEADACHE"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_SEVERE_HEADACHE"
+    ]
+  },
+  {
+    "name": "normal-with-visual",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "VISUAL_DISTURBANCE"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_VISUAL_DISTURBANCE"
+    ]
+  },
+  {
+    "name": "normal-with-pain",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "UPPER_ABDOMINAL_PAIN"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_UPPER_ABDOMINAL_PAIN"
+    ]
+  },
+  {
+    "name": "normal-with-breathlessness",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "BREATHLESSNESS"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_BREATHLESSNESS"
+    ]
+  },
+  {
+    "name": "normal-with-seizure",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "SEIZURE"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_SEIZURE"
+    ]
+  },
+  {
+    "name": "normal-with-bleeding",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "HEAVY_BLEEDING"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_HEAVY_BLEEDING"
+    ]
+  },
+  {
+    "name": "normal-with-reduced-movement",
+    "systolic": 120,
+    "diastolic": 80,
+    "symptoms": [
+      "REDUCED_FETAL_MOVEMENT"
+    ],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SYMPTOM_REDUCED_FETAL_MOVEMENT"
+    ]
+  },
+  {
+    "name": "missing-systolic",
+    "systolic": null,
+    "diastolic": 80,
+    "symptoms": [],
+    "urgency": "REVIEW_REQUIRED",
+    "ruleTriggers": [
+      "MISSING_SYSTOLIC"
+    ]
+  },
+  {
+    "name": "missing-diastolic-severe",
+    "systolic": 160,
+    "diastolic": null,
+    "symptoms": [],
+    "urgency": "URGENT",
+    "ruleTriggers": [
+      "SEVERE_SYSTOLIC",
+      "MISSING_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "missing-both",
+    "systolic": null,
+    "diastolic": null,
+    "symptoms": [],
+    "urgency": "REVIEW_REQUIRED",
+    "ruleTriggers": [
+      "MISSING_SYSTOLIC",
+      "MISSING_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "elevated-systolic",
+    "systolic": 140,
+    "diastolic": 80,
+    "symptoms": [],
+    "urgency": "REVIEW_REQUIRED",
+    "ruleTriggers": [
+      "ELEVATED_SYSTOLIC"
+    ]
+  },
+  {
+    "name": "elevated-diastolic",
+    "systolic": 130,
+    "diastolic": 90,
+    "symptoms": [],
+    "urgency": "REVIEW_REQUIRED",
+    "ruleTriggers": [
+      "ELEVATED_DIASTOLIC"
+    ]
+  },
+  {
+    "name": "no-trigger",
+    "systolic": 139,
+    "diastolic": 89,
+    "symptoms": [],
+    "urgency": "NO_TRIGGER",
+    "ruleTriggers": []
+  }
+]

@@ -1,0 +1,32 @@
+test_duplicate_records_rejected (test_research.GateTests.test_duplicate_records_rejected) ... ok
+test_empty_manifest_is_blocked (test_research.GateTests.test_empty_manifest_is_blocked) ... ok
+test_missing_patient_linkage_rejected (test_research.GateTests.test_missing_patient_linkage_rejected) ... ok
+test_naive_time_rejected (test_research.GateTests.test_naive_time_rejected) ... ok
+test_nonfinite_features_rejected (test_research.GateTests.test_nonfinite_features_rejected) ... ok
+test_patient_partitions_are_disjoint_and_reproducible (test_research.GateTests.test_patient_partitions_are_disjoint_and_reproducible) ... ok
+test_post_index_features_rejected (test_research.GateTests.test_post_index_features_rejected) ... ok
+test_small_cohort_rejected (test_research.GateTests.test_small_cohort_rejected) ... ok
+test_uci_assessment_is_blocked (test_research.GateTests.test_uci_assessment_is_blocked) ... ok
+test_boundaries (test_research.InferenceTests.test_boundaries) ... ok
+test_invalid_input_cannot_reassure (test_research.InferenceTests.test_invalid_input_cannot_reassure) ... ok
+test_invalid_other_input_cannot_suppress_urgent (test_research.InferenceTests.test_invalid_other_input_cannot_suppress_urgent) ... ok
+test_missing_is_not_normal (test_research.InferenceTests.test_missing_is_not_normal) ... ok
+test_model_loading_is_blocked (test_research.InferenceTests.test_model_loading_is_blocked) ... ok
+test_no_trigger_is_not_healthy (test_research.InferenceTests.test_no_trigger_is_not_healthy) ... ok
+test_severe_diastolic (test_research.InferenceTests.test_severe_diastolic) ... ok
+test_severe_systolic_with_missing_diastolic (test_research.InferenceTests.test_severe_systolic_with_missing_diastolic) ... ok
+test_symptoms_override_normal_bp (test_research.InferenceTests.test_symptoms_override_normal_bp) ... ok
+test_conformal_abstention (test_research.MetricTests.test_conformal_abstention) ... ok
+test_empty_sets_abstain (test_research.MetricTests.test_empty_sets_abstain) ... ok
+test_finite_sample_conformal_small_cohort (test_research.MetricTests.test_finite_sample_conformal_small_cohort) ... ok
+test_known_ranking (test_research.MetricTests.test_known_ranking) ... ok
+test_perfect_predictions (test_research.MetricTests.test_perfect_predictions) ... ok
+test_reject_invalid_labels_and_shapes (test_research.MetricTests.test_reject_invalid_labels_and_shapes) ... ok
+test_reject_invalid_probabilities (test_research.MetricTests.test_reject_invalid_probabilities) ... ok
+test_tied_predictions (test_research.MetricTests.test_tied_predictions) ... ok
+test_undefined_denominators_remain_null (test_research.MetricTests.test_undefined_denominators_remain_null) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.013s
+
+OK

@@ -1,0 +1,108 @@
+{
+  "component": "Android Kotlin Application (:domain + :app)",
+  "build": "PASS",
+  "total_unit_tests": 64,
+  "passed": 64,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": [
+    {
+      "name": "org.vitalink.app.DraftValidationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.085
+    },
+    {
+      "name": "org.vitalink.domain.ClinicalRulesTest",
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.135
+    },
+    {
+      "name": "org.vitalink.domain.ContractParityTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.055
+    },
+    {
+      "name": "org.vitalink.domain.ReferralTest",
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.11
+    },
+    {
+      "name": "org.vitalink.domain.RuleBenchmarkTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.074
+    }
+  ],
+  "apks": [
+    {
+      "path": "apps\\android\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "size_bytes": 1173285,
+      "sha256": "68e5da0120c58fc1e35e517f3a0964bd872cd47d593f96605db534cf558cafa6"
+    },
+    {
+      "path": "apps\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "size_bytes": 9801357,
+      "sha256": "2fcea676272bc6b55515ef32d4d97c551571cf3d64e86bcc79123313cc6edd69"
+    }
+  ],
+  "host_jvm_rule_benchmark": {
+    "measurement": "host-jvm-rules-only",
+    "unit": "nanoseconds",
+    "warmup": 10000,
+    "samples": 5000,
+    "median": 1000,
+    "p95": 1200,
+    "jvm": "21.0.10",
+    "os": "Windows 11",
+    "arch": "amd64",
+    "processors": 12,
+    "deviceBenchmark": false
+  },
+  "tasks_verified": [
+    ":domain:test",
+    ":app:testDebugUnitTest",
+    ":app:assembleDebug",
+    ":app:assembleDebugAndroidTest",
+    ":app:lintDebug",
+    "wrapper"
+  ],
+  "lint": {
+    "status": "PASS",
+    "report_html": "apps/android/app/build/reports/lint-results-debug.html",
+    "report_xml": "apps/android/app/build/reports/lint-results-debug.xml",
+    "error_count": 0,
+    "warning_count": 3,
+    "issues": [
+      {
+        "id": "GradleDependency",
+        "severity": "Warning",
+        "summary": "Obsolete Gradle Dependency"
+      },
+      {
+        "id": "DataExtractionRules",
+        "severity": "Warning",
+        "summary": "Missing data extraction rules"
+      },
+      {
+        "id": "MissingApplicationIcon",
+        "severity": "Warning",
+        "summary": "Missing application icon"
+      }
+    ]
+  }
+}

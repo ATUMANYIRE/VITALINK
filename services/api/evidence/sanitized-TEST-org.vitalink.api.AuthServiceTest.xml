@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="org.vitalink.api.AuthServiceTest" time="5.1" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="os.name" value="Windows 11" />
+    <property name="java.version" value="21.0.10" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vendor" value="Microsoft" />
+    </properties>
+  <testcase name="passwordEncodingIsSaltedAndNotPlaintext" classname="org.vitalink.api.AuthServiceTest" time="3.165">
+    </testcase>
+  <testcase name="missingTokenNeverQueriesDatabase" classname="org.vitalink.api.AuthServiceTest" time="0.519" />
+  <testcase name="tokenDigestIsStableAndDoesNotContainToken" classname="org.vitalink.api.AuthServiceTest" time="0.444" />
+  <testcase name="malformedTokenNeverQueriesDatabase" classname="org.vitalink.api.AuthServiceTest" time="0.439" />
+  <testcase name="repeatedAttemptsAreThrottled" classname="org.vitalink.api.AuthServiceTest" time="0.473" />
+</testsuite>

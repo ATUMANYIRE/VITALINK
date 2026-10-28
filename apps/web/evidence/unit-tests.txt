@@ -1,0 +1,43 @@
+﻿
+> vitalink-clinical-workspace@1.0.0 test
+> node --test --test-isolation=none tests/*.test.ts
+
+Γ£ö server receipt is accepted without inventing a clinical acknowledgment (2.6263ms)
+Γ£ö acknowledgment requires explicit actor and timestamp (1.2908ms)
+Γ£ö server received must not carry contradictory acknowledgment metadata (0.3678ms)
+Γ£ö missing measurements remain null and are not rendered as zero (0.6262ms)
+Γ£ö malformed response shapes and delivery states fail closed (0.6231ms)
+Γ£ö referral identifiers and synthetic patient identifiers are validated (0.3301ms)
+Γ£ö pagination validates every row and numeric counts (0.5807ms)
+Γ£ö metrics cannot silently substitute fabricated or invalid counts (0.2042ms)
+Γ£ö history rejects client-only states and malformed timestamps (0.3171ms)
+Γ£ö unknown roles cannot become an authenticated profile (0.5754ms)
+Γ£ö explanations identify actual severe clinical rule thresholds (0.2973ms)
+Γ£ö malformed upstream low priority cannot suppress severe BP or symptoms (0.2999ms)
+Γ£ö missing measurements cannot be presented as no rule trigger (0.1569ms)
+Γ£ö unsupported versions, unknown symptoms and implausible values fail closed (0.3417ms)
+Γ£ö missing, invented and duplicate rule explanations fail closed (0.4266ms)
+Γ£ö acknowledgment timestamp cannot precede receipt or omit its actor (0.2331ms)
+Γ£ö all shared cross-platform rule fixtures match the full response contract (1.8606ms)
+Γ£ö clinical BP boundary quadrant (159/109, 160/109, 159/110, 160/110) enforces OR semantics (0.1653ms)
+Γ£ö mutation origin must match configured application origin (0.2032ms)
+Γ£ö missing, malformed and different-port origins are rejected (0.1602ms)
+Γ£ö same-origin browser mutation is allowed (0.2187ms)
+Γ£ö proxy cannot be used to submit referrals or invoke arbitrary server endpoints (0.167ms)
+Γ£ö proxy permits scoped reads and only explicit clinical mutations (0.1561ms)
+Γ£ö production server refuses an absent encryption secret (0.3472ms)
+Γ£ö development may use ephemeral session keys (0.0527ms)
+Γ£ö canonical 32-byte session secret is accepted (0.1262ms)
+Γ£ö short, malformed and noncanonical secrets are rejected (0.1898ms)
+Γ£ö production cookies default to Secure (0.0865ms)
+Γ£ö explicit insecure cookies are restricted to localhost demonstrations (0.1149ms)
+Γ£ö invalid secure-cookie configuration is rejected (0.0591ms)
+Γ£ö insecure production cookie override requires an explicit localhost origin (0.1167ms)
+Γä╣ tests 31
+Γä╣ suites 0
+Γä╣ pass 31
+Γä╣ fail 0
+Γä╣ cancelled 0
+Γä╣ skipped 0
+Γä╣ todo 0
+Γä╣ duration_ms 121.9981

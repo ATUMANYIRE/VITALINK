@@ -1,0 +1,185 @@
+HEALTH HACKATHON 3.0 / VIT BHOPAL
+
+VITALINK                                 +
+
+The offline maternal
+
+early-warning network
+
+Safer screening. Faster referrals.
+Connected care - even without internet.
+
+PROJECT CONCEPT · PITCH PRESENTATION
+VITALINK / HEALTH HACKATHON 3.0
+
+THE PROBLEM
+
+The risk is not just detection. It is the handoff.
+
+A concerning reading can become a delayed referral when systems and connectivity fail.
+
+01 INCONSISTENT                                            02 LATE ESCALATION            03 BROKEN REFERRAL
+
+CAPTURE                                                    Severe readings need a clear  A saved record is not proof
+                                                           and immediate clinical        that the hospital received it.
+Vitals and symptoms may be                                 workflow.
+recorded without consistent
+quality checks.
+
+Target users: ASHA workers · ANMs · Primary health centres · Regional clinicians
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                                02
+VITALINK / HEALTH HACKATHON 3.0
+
+THE SOLUTION
+
+One workflow. From village to clinician.
+
+A clinically constrained product, not a camera-only diagnostic claim.
+
+ 1                          2                                     3                            4                        5
+
+MEASURE              > CHECK                               > ASSESS                     > REFER                  > CONFIRM
+
+Validated BP and            Quality checks and                     Optional calibrated          Durable offline         Clinician
+structured symptoms         safety rules                           edge AI                      referral                acknowledgment
+
+                                                           WORKS WITHOUT INTERNET
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                        03
+VITALINK / HEALTH HACKATHON 3.0
+
+CLINICAL SAFETY
+
+Rules first. AI never overrides an emergency.
+
+A severe-range BP finding must trigger urgent clinical assessment regardless of model score.
+
+DETERMINISTIC SAFETY                                       UNCERTAINTY-AWARE AI
+
+Severe-range pregnancy BP: systolic 160 or                 For non-emergency cases, calibrated prediction
+diastolic 110 mmHg. Escalate under local clinical          may assist prioritization. Uncertain results abstain.
+protocol.
+
+No diagnosis claims · No fabricated accuracy · Human clinical oversight required
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                         04
+VITALINK / HEALTH HACKATHON 3.0
+
+TECHNICAL DIFFERENTIATION
+
+A small model with a big safety envelope.
+
+Clinical rule engine + calibrated risk + selective prediction + measured device performance.
+
+MODEL                                                      UNCERTAINTY               EXPLAINABILITY
+
+Logistic baseline; XGBoost                                 Calibration, conformal    Feature contributions with
+candidate; ONNX Runtime                                    prediction, and explicit  honest confidence and model
+Mobile.                                                    abstention.               limitations.
+
+Key evaluation: sensitivity, specificity, calibration, false negatives, and site shift.
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                         05
+VITALINK / HEALTH HACKATHON 3.0
+
+ARCHITECTURE
+
+Edge autonomy. Reliable synchronization.
+
+Local screening continues during a network outage; server acknowledgment is a separate event.
+
+ANDROID FIELD           LOCAL                                    ENCRYPTED                 REGIONAL API           DOCTOR
+
+Kotlin / Compose   DECISIONS                                OUTBOX                                           CONSOLE
+
+                          Rules + ONNX                             Room / SQLCipher          Spring Boot /          Next.js / audit trail
+                                                                                             PostgreSQL
+
+                  PENDING  SENT  ACKNOWLEDGED
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                   06
+VITALINK / HEALTH HACKATHON 3.0
+
+LIVE DEMO
+
+180 seconds. One complete case.
+
+Airplane mode first. A synthetic severe reading. Then a verified hospital acknowledgment.
+
+00:00             00:40                                    01:20           02:00           02:30
+
+OFFLINE           ASSESS                                   REFER           SYNC            ACK
+
+Turn on airplane  Enter synthetic BP                       Save a pending  Restore         Doctor confirms
+mode              166/112                                  referral        connectivity    receipt
+
+Demo data are synthetic; a rules-based trigger is not a validated diagnosis.
+
+VITALINK · Concept-stage prototype · Not for clinical use                                  07
+VITALINK / HEALTH HACKATHON 3.0
+
+HEALTH ECONOMICS
+
+Measure the workflow, not imaginary savings.
+
+Equipment reuse lowers per-screening allocation; clinical and operational outcomes need field evidence.
+
+ILLUSTRATIVE UNIT ECONOMICS                                WHAT TO ACTUALLY MEASURE
+
+7.78                                                       Referral acknowledgment time, documentation
+                                                           time, duplicate records, missed handoffs, and staff
+per screening: 10,000 / (150 × 24) + 5                     burden.
+
+Scenario only. Excludes labor, training, maintenance, and clinical follow-up.
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                       08
+VITALINK / HEALTH HACKATHON 3.0
+
+EVIDENCE
+
+Prove reliability before making clinical claims.
+
+Engineering acceptance tests are achievable during the hackathon; patient outcomes require future studies.
+
+OFFLINE                                                    LATENCY                     REFERRALS
+
+100% supported scenarios                                   p95 < 300 ms target         No lost committed records
+
+DUPLICATES                                                 RULES                       PRIVACY
+
+Zero in retry tests                                        All reviewed fixtures pass  No PII in app logs
+
+VITALINK · Concept-stage prototype · Not for clinical use                                                         09
+VITALINK / HEALTH HACKATHON 3.0
+
+ROADMAP
+
+Five milestones. One deployable demonstration.
+
+The submission is a verified prototype with a documented clinical boundary.
+
+0  CLINICAL FOUNDATION
+
+1
+
+0  OFFLINE REFERRALS
+
+2
+
+0  REGIONAL WORKSPACE
+
+3
+
+0  EDGE AI + VALIDATION
+
+4
+
+0  RELEASE + SUBMISSION
+
+5
+
+VITALINK: recognize danger, act locally, and close the referral loop.
+
+VITALINK · Concept-stage prototype · Not for clinical use                    10
+
