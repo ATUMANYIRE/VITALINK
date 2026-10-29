@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "errors": 0,
+  "warnings": 3,
+  "issues": [
+    {
+      "id": "GradleDependency",
+      "severity": "Warning",
+      "message": "A newer version of androidx.test:runner than 1.5.0 is available: 1.5.2",
+      "locations": [
+        {
+          "file": "E:\\Projects\\VITALINK\\apps\\android\\app\\build.gradle.kts",
+          "line": "61"
+        }
+      ]
+    },
+    {
+      "id": "DataExtractionRules",
+      "severity": "Warning",
+      "message": "The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher.",
+      "locations": [
+        {
+          "file": "E:\\Projects\\VITALINK\\apps\\android\\app\\src\\main\\AndroidManifest.xml",
+          "line": "4"
+        }
+      ]
+    },
+    {
+      "id": "VectorPath",
+      "severity": "Warning",
+      "message": "Very long vector path (833 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.",
+      "locations": [
+        {
+          "file": "E:\\Projects\\VITALINK\\apps\\android\\app\\src\\main\\res\\drawable\\ic_visibility_off.xml",
+          "line": "3"
+        }
+      ]
+    }
+  ],
+  "fix": "API27-only windowLightNavigationBar moved to values-v27 and values-v31; minSdk26 unchanged; no lint baseline or suppression added",
+  "gradleLog": "apps/android/evidence/gradle-20261029-173405.txt"
+}

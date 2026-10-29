@@ -1,0 +1,29 @@
+{
+  "device": "Android SDK built for x86_64",
+  "api": "30",
+  "size": "Physical size: 1080x2340",
+  "density": "Physical density: 440",
+  "fontScale": "1.0",
+  "airplaneMode": "1",
+  "hostApkSha256": "3129d428ee22e97975b5ed1992c10ff2f859abff323cd67866b9d0a95e392e6f",
+  "hostAndroidTestApkSha256": "9eff0d6d538e4e0de096df4e7e61e720fd3fc164cba0f54aa796f1733a598d8f",
+  "serial": "emulator-5556",
+  "elapsedSeconds": 52.44,
+  "command": [
+    "shell",
+    "am",
+    "instrument",
+    "-w",
+    "-r",
+    "-e",
+    "class",
+    "org.vitalink.app.NativeScreenshotJourneyTest",
+    "-e",
+    "uiCaptureMode",
+    "journey",
+    "-e",
+    "screenPrefix",
+    "phone-final",
+    "org.vitalink.app.debug.test/androidx.test.runner.AndroidJUnitRunner"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-29",
+  "scope": "Native Android presentation rebuild; synthetic records only",
+  "build": "PASS",
+  "buildLog": "apps/android/evidence/gradle-20261029-173405.txt",
+  "jvm": {
+    "passed": 70,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeSuites": {
+    "passed": 20,
+    "failures": 0,
+    "evidence": "evidence/android-ui/device-tests-final.txt",
+    "clinicalUi": 2,
+    "encryptedPersistenceAndMigration": 16,
+    "referralPresentation": 2
+  },
+  "processBoundaryStages": {
+    "passed": 4,
+    "evidence": "evidence/android-ui/offline-process-stages-initial.txt"
+  },
+  "apkUpdateAndEmulatorRebootPersistence": {
+    "status": "PASS",
+    "evidence": "evidence/android-ui/update-and-reboot-persistence.txt"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 3
+  },
+  "captureJourneys": [
+    {
+      "folder": "phone-final",
+      "pngCount": 16,
+      "density": 2.75,
+      "fontScale": 1,
+      "airplaneMode": "1",
+      "status": "PASS"
+    },
+    {
+      "folder": "small-final",
+      "pngCount": 5,
+      "density": 2,
+      "fontScale": 1,
+      "airplaneMode": "1",
+      "status": "PASS"
+    },
+    {
+      "folder": "large-text-final",
+      "pngCount": 5,
+      "density": 2,
+      "fontScale": 1.5,
+      "airplaneMode": "1",
+      "status": "PASS"
+    }
+  ],
+  "normalLaunchCaptures": [
+    "native-live/welcome.png",
+    "native-live/standard-home.png",
+    "native-live/small-home.png",
+    "native-live/large-text-home.png"
+  ],
+  "captureNote": "Raw first-frame instrumentation screenshots can show a prior loading frame. Use normal-launch captures and their UI hierarchies for landing-screen visual evidence. No image editing or mockups used.",
+  "device": {
+    "api": 30,
+    "abi": "x86_64",
+    "ramMiB": 1536,
+    "cores": 2,
+    "accelerator": "WHPX",
+    "standardPixels": [
+      1080,
+      2340
+    ],
+    "standardDpi": 440,
+    "smallDp": [
+      320,
+      640
+    ],
+    "largeDp": [
+      480,
+      960
+    ],
+    "largeFontScale": 1.5
+  },
+  "limitations": [
+    "Live API health at 127.0.0.1:8087 returned connection refused; real sign-in, server receipt and clinician acknowledgment were not rerun in this presentation change.",
+    "Physical devices and Android API26/35 runtime behavior were not tested.",
+    "TalkBack and complete accessibility compliance review remain manual.",
+    "Research prototype; no clinical validation or predictive-model accuracy claim."
+  ]
+}

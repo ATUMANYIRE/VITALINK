@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Vitalink.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:colorAccent">#164C3F</item>
+    </style>
+    <style name="Theme.Vitalink" parent="Theme.Vitalink.Base" />
+</resources>

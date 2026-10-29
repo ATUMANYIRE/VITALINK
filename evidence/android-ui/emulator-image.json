@@ -1,0 +1,9 @@
+{
+  "source": "https://dl.google.com/android/repository/sys-img/android/x86_64-30_r11.zip",
+  "archiveBytes": 676379777,
+  "sha1": "5e4de3946d46f88856c35efcc4d797b381456347",
+  "api": 30,
+  "abi": "x86_64",
+  "avd": "Vitalink_UI_API30",
+  "ramMiB": 1536
+}

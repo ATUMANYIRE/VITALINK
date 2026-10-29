@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.vitalink.domain.ReferralTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2026-10-29T15:37:46" hostname="AJ-WINNY" time="0.435">
+  <properties/>
+  <testcase name="lowServerUrgencyCannotSuppressRules" classname="org.vitalink.domain.ReferralTest" time="0.039"/>
+  <testcase name="inFlightIsNotDelivery" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="duplicateSafetyTriggersRejectMalformedReceipt" classname="org.vitalink.domain.ReferralTest" time="0.002"/>
+  <testcase name="retriesUseBoundedJitterAndExponentialDelay" classname="org.vitalink.domain.ReferralTest" time="0.037"/>
+  <testcase name="deliveredNotRecoveredAsRetry" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="wrongFacilityCannotConfirmDelivery" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="changedSnapshotCannotConfirmDelivery" classname="org.vitalink.domain.ReferralTest" time="0.017"/>
+  <testcase name="localQueueCannotAcknowledge" classname="org.vitalink.domain.ReferralTest" time="0.076"/>
+  <testcase name="offlineHandoffNeverClaimsDelivery" classname="org.vitalink.domain.ReferralTest" time="0.196"/>
+  <testcase name="replayedSameStateAllowed" classname="org.vitalink.domain.ReferralTest" time="0.002"/>
+  <testcase name="activeLeaseNotRecovered" classname="org.vitalink.domain.ReferralTest" time="0.003"/>
+  <testcase name="acknowledgmentBeforeReceiptRejected" classname="org.vitalink.domain.ReferralTest" time="0.005"/>
+  <testcase name="normalLifecycleTransitions" classname="org.vitalink.domain.ReferralTest" time="0.005"/>
+  <testcase name="explicitClinicianAcknowledgmentAccepted" classname="org.vitalink.domain.ReferralTest" time="0.004"/>
+  <testcase name="lostResponseReplayMayReturnAcknowledged" classname="org.vitalink.domain.ReferralTest" time="0.002"/>
+  <testcase name="closedCannotReopen" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="expiredLeaseRecovered" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="transientErrorsRetry" classname="org.vitalink.domain.ReferralTest" time="0.003"/>
+  <testcase name="wrongIdentifierCannotConfirmDelivery" classname="org.vitalink.domain.ReferralTest" time="0.001"/>
+  <testcase name="contradictoryReceiptRejected" classname="org.vitalink.domain.ReferralTest" time="0.004"/>
+  <testcase name="deliveredCannotRegress" classname="org.vitalink.domain.ReferralTest" time="0.005"/>
+  <testcase name="validReceiptConfirmsServerDelivery" classname="org.vitalink.domain.ReferralTest" time="0.006"/>
+  <testcase name="authenticationValidationConflictErrorsAreTerminal" classname="org.vitalink.domain.ReferralTest" time="0.004"/>
+  <testcase name="acknowledgmentRequiresClinicianEvidence" classname="org.vitalink.domain.ReferralTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

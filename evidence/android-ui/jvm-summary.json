@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "tests": 70,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": [
+    {
+      "source": "apps/android/app/build/test-results/testDebugUnitTest/TEST-org.vitalink.app.DraftValidationTest.xml",
+      "name": "org.vitalink.app.DraftValidationTest",
+      "timestamp": "2026-10-29T15:43:08",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.184"
+    },
+    {
+      "source": "apps/android/app/build/test-results/testDebugUnitTest/TEST-org.vitalink.app.PresentationSafetyTest.xml",
+      "name": "org.vitalink.app.PresentationSafetyTest",
+      "timestamp": "2026-10-29T15:43:08",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.025"
+    },
+    {
+      "source": "apps/android/domain/build/test-results/test/TEST-org.vitalink.domain.ClinicalRulesTest.xml",
+      "name": "org.vitalink.domain.ClinicalRulesTest",
+      "timestamp": "2026-10-29T15:37:45",
+      "tests": "35",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.829"
+    },
+    {
+      "source": "apps/android/domain/build/test-results/test/TEST-org.vitalink.domain.ContractParityTest.xml",
+      "name": "org.vitalink.domain.ContractParityTest",
+      "timestamp": "2026-10-29T15:37:46",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.178"
+    },
+    {
+      "source": "apps/android/domain/build/test-results/test/TEST-org.vitalink.domain.ReferralTest.xml",
+      "name": "org.vitalink.domain.ReferralTest",
+      "timestamp": "2026-10-29T15:37:46",
+      "tests": "24",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.435"
+    },
+    {
+      "source": "apps/android/domain/build/test-results/test/TEST-org.vitalink.domain.RuleBenchmarkTest.xml",
+      "name": "org.vitalink.domain.RuleBenchmarkTest",
+      "timestamp": "2026-10-29T15:37:46",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.181"
+    }
+  ],
+  "gradleLog": "apps/android/evidence/gradle-20261029-173405.txt",
+  "command": "apps/android/scripts/build.ps1 -Offline -Tasks ':domain:test','--rerun',':app:testDebugUnitTest','--rerun',':app:assembleDebug',':app:assembleDebugAndroidTest',':app:lintDebug'"
+}

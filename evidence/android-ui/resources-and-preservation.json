@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "apk": "apps\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+  "apk_bytes": 10402369,
+  "apk_sha256": "3129d428ee22e97975b5ed1992c10ff2f859abff323cd67866b9d0a95e392e6f",
+  "fonts": {
+    "dm_sans": {
+      "apk_member": "res/font/dm_sans.ttf",
+      "bytes": 240164,
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d"
+    },
+    "fraunces": {
+      "apk_member": "res/font/fraunces.ttf",
+      "bytes": 360440,
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+    }
+  },
+  "license_members": [
+    "assets/licenses/dm-sans-OFL.txt",
+    "assets/licenses/fraunces-OFL.txt",
+    "assets/licenses/material-symbols-APACHE.txt"
+  ],
+  "approved_logo_geometry": "PASS",
+  "text_contrast_pairs": [
+    {
+      "purpose": "functional text",
+      "foreground": "#252B28",
+      "background": "#FFFFFF",
+      "ratio": 14.434
+    },
+    {
+      "purpose": "supporting text",
+      "foreground": "#626B66",
+      "background": "#FFFFFF",
+      "ratio": 5.506
+    },
+    {
+      "purpose": "primary button",
+      "foreground": "#FFFFFF",
+      "background": "#164C3F",
+      "ratio": 9.815
+    },
+    {
+      "purpose": "urgent alert",
+      "foreground": "#A12D24",
+      "background": "#FFF1EF",
+      "ratio": 6.543
+    },
+    {
+      "purpose": "review alert",
+      "foreground": "#815700",
+      "background": "#FFF5E3",
+      "ratio": 5.891
+    },
+    {
+      "purpose": "pink-accent text",
+      "foreground": "#8A4056",
+      "background": "#FDF2F6",
+      "ratio": 6.515
+    }
+  ],
+  "preservation_checkpoint": "bd27be456c48d5b1d0c06928244f36acfebdf7a8",
+  "preserved_paths": [
+    "apps/android/domain",
+    "apps/android/app/src/main/java/org/vitalink/app/data",
+    "apps/android/app/src/main/java/org/vitalink/app/SyncWorker.kt",
+    "apps/android/app/src/main/java/org/vitalink/app/VitalinkApplication.kt",
+    "apps/android/app/schemas",
+    "services/api",
+    "apps/web",
+    "contracts/API_CONTRACT.md",
+    "contracts/clinical-cases.json",
+    "ml"
+  ],
+  "changed_preserved_files": [],
+  "limitations": [
+    "APK resource inspection is not visual or device execution evidence.",
+    "Contrast calculations do not establish complete accessibility compliance."
+  ]
+}

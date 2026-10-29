@@ -27,6 +27,8 @@ data class UiState(
     val draft: Draft = Draft(), val records: LocalRecords = LocalRecords(), val online: Boolean = false,
     val session: Session? = null, val busy: Boolean = false, val message: String? = null, val errors: List<String> = emptyList(),
     val storageError: Boolean = false,
+    val recordsLoaded: Boolean = false,
+    val savedAssessmentId: String? = null, val savedReferralId: String? = null,
 )
 
 class AssessmentViewModel(application: Application) : AndroidViewModel(application) {
@@ -48,8 +50,8 @@ class AssessmentViewModel(application: Application) : AndroidViewModel(applicati
         refreshConnectivity()
         connectivity.registerDefaultNetworkCallback(callback)
         viewModelScope.launch {
-            repo.records.catch { mutableState.update { it.copy(storageError = true, message = "Encrypted storage cannot be read. Data was not reset. Restore device access or use local clinical handoff procedures.") } }
-                .collect { records -> mutableState.update { it.copy(records = records) } }
+            repo.records.catch { mutableState.update { it.copy(storageError = true, recordsLoaded = true, message = "Encrypted storage cannot be read. Data was not reset. Restore device access or use local clinical handoff procedures.") } }
+                .collect { records -> mutableState.update { it.copy(records = records, recordsLoaded = true) } }
         }
         action {
             repo.recoverExpiredLeases()
@@ -60,6 +62,8 @@ class AssessmentViewModel(application: Application) : AndroidViewModel(applicati
         }
     }
     fun edit(transform: (Draft) -> Draft) { mutableState.update { it.copy(draft = transform(it.draft), errors = emptyList(), message = null) } }
+    fun startNewAssessment() { mutableState.update { it.copy(draft = Draft(), errors = emptyList(), message = null) } }
+    fun consumeSaveNavigation() { mutableState.update { it.copy(savedAssessmentId = null, savedReferralId = null) } }
     fun dismissMessage() { mutableState.update { it.copy(message = null, errors = emptyList()) } }
     fun save(referral: Boolean) {
         val draft = state.value.draft
@@ -67,15 +71,23 @@ class AssessmentViewModel(application: Application) : AndroidViewModel(applicati
         val errors = draft.errors(a)
         if (errors.isNotEmpty()) { mutableState.update { it.copy(errors = errors) }; return }
         action {
+            var referralId: String? = null
             if (referral) {
                 val facility = state.value.session?.facilityId ?: "demo-facility"
-                repo.createReferral(a, facility)
+                referralId = repo.createReferral(a, facility)
                 SyncWorker.enqueue(app)
             } else repo.saveAssessment(a)
-            mutableState.update { it.copy(draft = Draft(), message = if (referral) "Referral saved on this device. Delivery is unconfirmed until the server responds. For urgent findings, use the local escalation pathway now." else "Assessment saved securely on this device.") }
+            mutableState.update { it.copy(draft = Draft(),
+                savedAssessmentId = a.id, savedReferralId = referralId,
+                message = if (referral) "Referral saved on this device. Delivery is unconfirmed until the server responds. For urgent findings, use the local escalation pathway now." else "Assessment saved securely on this device.") }
         }
     }
-    fun refer(a: Assessment) = action { repo.createReferral(a, state.value.session?.facilityId ?: "demo-facility"); SyncWorker.enqueue(app); mutableState.update { it.copy(message = "Referral queued. This does not notify a clinician until delivery is confirmed.") } }
+    fun refer(a: Assessment) = action {
+        val referralId = repo.createReferral(a, state.value.session?.facilityId ?: "demo-facility")
+        SyncWorker.enqueue(app)
+        mutableState.update { it.copy(savedAssessmentId = a.id,
+            savedReferralId = referralId, message = "Referral queued. This does not notify a clinician until delivery is confirmed.") }
+    }
     fun login(username: String, password: String) = action {
         val session = repo.api.login(username, password)
         repo.unblockAfterLogin()

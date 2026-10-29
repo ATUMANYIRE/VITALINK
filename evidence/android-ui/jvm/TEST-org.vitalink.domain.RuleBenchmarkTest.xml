@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.vitalink.domain.RuleBenchmarkTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-29T15:37:46" hostname="AJ-WINNY" time="0.181">
+  <properties/>
+  <testcase name="measureHostJvmRuleLatency" classname="org.vitalink.domain.RuleBenchmarkTest" time="0.181"/>
+  <system-out><![CDATA[{"measurement":"host-jvm-rules-only","unit":"nanoseconds","warmup":10000,"samples":5000,"median":1800,"p95":2300,"jvm":"21.0.10","os":"Windows 11","arch":"amd64","processors":12,"deviceBenchmark":false}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

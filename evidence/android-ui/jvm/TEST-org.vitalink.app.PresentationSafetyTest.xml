@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.vitalink.app.PresentationSafetyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-29T15:43:08" hostname="AJ-WINNY" time="0.025">
+  <properties/>
+  <testcase name="serverReceiptIsSeparateFromClinicalAcknowledgment" classname="org.vitalink.app.PresentationSafetyTest" time="0.003"/>
+  <testcase name="draftPendingAndTransmissionNeverConfirmServerDelivery" classname="org.vitalink.app.PresentationSafetyTest" time="0.002"/>
+  <testcase name="invalidTimeNeverBecomesAnInventedCurrentTimestamp" classname="org.vitalink.app.PresentationSafetyTest" time="0.011"/>
+  <testcase name="acknowledgmentRequiresAnActorAndParseableEvidenceTime" classname="org.vitalink.app.PresentationSafetyTest" time="0.005"/>
+  <testcase name="closedStateDoesNotInventMissingClinicalAcknowledgment" classname="org.vitalink.app.PresentationSafetyTest" time="0.001"/>
+  <testcase name="unrecognizedFailureMetadataIsNeverEchoedToTheScreen" classname="org.vitalink.app.PresentationSafetyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

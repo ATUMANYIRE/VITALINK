@@ -1,0 +1,11 @@
+{
+  "source": "ADB exec-out screencap -p after normal app launch; unmodified pixels",
+  "serial": "emulator-5556",
+  "expectedTextObserved": "Start assessment",
+  "widthPixels": 1080,
+  "heightPixels": 2340,
+  "pngSha256": "ae9739832ecf7fb1771b00340229e76a057696a385b19a01bcb22211562080d0",
+  "density": "Physical density: 440",
+  "fontScale": "1.0",
+  "airplaneMode": "1"
+}

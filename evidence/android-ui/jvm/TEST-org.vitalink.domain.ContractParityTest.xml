@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.vitalink.domain.ContractParityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-29T15:37:46" hostname="AJ-WINNY" time="0.178">
+  <properties/>
+  <testcase name="sharedClinicalCasesMatchNativeRules" classname="org.vitalink.domain.ContractParityTest" time="0.178"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

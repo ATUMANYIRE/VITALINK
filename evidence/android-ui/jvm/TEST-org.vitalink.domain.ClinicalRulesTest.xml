@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.vitalink.domain.ClinicalRulesTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2026-10-29T15:37:45" hostname="AJ-WINNY" time="0.829">
+  <properties/>
+  <testcase name="diastolicBelowSevereRequiresReview" classname="org.vitalink.domain.ClinicalRulesTest" time="0.313"/>
+  <testcase name="severeSystolicRetainsMissingDiastolicTrigger" classname="org.vitalink.domain.ClinicalRulesTest" time="0.031"/>
+  <testcase name="equalBpRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.061"/>
+  <testcase name="outOfRangeBpRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="invalidLargeBpStillWarnsBeforeCorrection" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="missingBpIsReviewNotNormal" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="exactSevereOrBoundaries159And160By109And110" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="severeSystolicTriggersUrgentAssessment" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="severeSystolicRetainsElevatedDiastolicTrigger" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="malformedUuidRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="gestationBoundsValidated" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="missingMeasurementsPreserved" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="urgentGuidanceNeverWaitsForNetwork" classname="org.vitalink.domain.ClinicalRulesTest" time="0.086"/>
+  <testcase name="unknownRuleVersionRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="syntheticIdentifierRequired" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="triggersAreDeterministic" classname="org.vitalink.domain.ClinicalRulesTest" time="0.062"/>
+  <testcase name="severeDiastolicTriggersUrgentAssessment" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="elevatedSystolicBoundary" classname="org.vitalink.domain.ClinicalRulesTest" time="0.004"/>
+  <testcase name="noTriggerNeverClaimsHealthy" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="invalidLowBpDoesNotReturnNoTrigger" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="unsupportedSourceRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="futureMeasurementRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="boundsAreInclusive" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="concerningSymptomOverridesMissingBp" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="toleratedClockSkewAccepted" classname="org.vitalink.domain.ClinicalRulesTest" time="0.003"/>
+  <testcase name="missingFeaturesCauseSafeAbstention" classname="org.vitalink.domain.ClinicalRulesTest" time="0.166"/>
+  <testcase name="elevatedDiastolicBoundary" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="validAssessmentHasNoValidationErrors" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="invalidTimeRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.008"/>
+  <testcase name="unavailableModelHasNoProbability" classname="org.vitalink.domain.ClinicalRulesTest" time="0.001"/>
+  <testcase name="everyConcerningSymptomOverridesNormalBp" classname="org.vitalink.domain.ClinicalRulesTest" time="0.006"/>
+  <testcase name="invertedBpRejected" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <testcase name="systolicBelowSevereRequiresReview" classname="org.vitalink.domain.ClinicalRulesTest" time="0.004"/>
+  <testcase name="invalidOtherMeasurementDoesNotSuppressSevereBp" classname="org.vitalink.domain.ClinicalRulesTest" time="0.006"/>
+  <testcase name="severeAvailableBpOverridesMissingOtherBp" classname="org.vitalink.domain.ClinicalRulesTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

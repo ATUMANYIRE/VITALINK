@@ -1,0 +1,32 @@
+{
+  "source": "Android UiAutomation.takeScreenshot; actual running application",
+  "density": 2,
+  "fontScale": 1,
+  "captures": [
+    {
+      "file": "small-final-02-home.png",
+      "widthPixels": 640,
+      "heightPixels": 1280
+    },
+    {
+      "file": "small-final-03-intake.png",
+      "widthPixels": 640,
+      "heightPixels": 1280
+    },
+    {
+      "file": "small-final-04-observations-urgent.png",
+      "widthPixels": 640,
+      "heightPixels": 1280
+    },
+    {
+      "file": "small-final-05-warning-signs.png",
+      "widthPixels": 640,
+      "heightPixels": 1280
+    },
+    {
+      "file": "small-final-06-review.png",
+      "widthPixels": 640,
+      "heightPixels": 1280
+    }
+  ]
+}

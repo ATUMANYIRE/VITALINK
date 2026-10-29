@@ -1,0 +1,87 @@
+{
+  "source": "Android UiAutomation.takeScreenshot; actual running application",
+  "density": 2.75,
+  "fontScale": 1,
+  "captures": [
+    {
+      "file": "phone-final-01-welcome.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-02-home.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-03-intake.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-04-observations-urgent.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-05-warning-signs.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-06-review.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-07-referral-details.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-08-referral-progress.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-13-offline-handoff-summary.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-09-referrals.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-10-records.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-14-saved-assessment.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-11-account.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-12-privacy.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-15-sign-in.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-final-16-licenses.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    }
+  ]
+}

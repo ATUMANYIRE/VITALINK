@@ -2,6 +2,14 @@
 
 Native Kotlin/Compose application with a pure Kotlin clinical domain module. Synthetic patient identifiers only (`SYN-...`). Clinical rules are research specifications awaiting clinician review; this is not a validated medical device.
 
+## Native presentation
+
+The Android presentation now uses the approved Protective Embrace vector, white/forest/pink design tokens, bundled DM Sans and editorial Fraunces, and native Material Symbols Rounded. Welcome appears only for new workspaces. Home, focused three-step assessment, rule results, records, referral tracking, account, privacy and offline licenses share one theme. Clinical instructions, medical values, forms and navigation use DM Sans. No reference photography or consumer baby-tracking feature is embedded.
+
+Presentation source: `app/src/main/java/org/vitalink/app/ui/`. Reference provenance: `../../design-references/README.md`. Current rebuild verification: `../../docs/ANDROID_UI_REBUILD.md` and `../../evidence/android-ui/`. Historical milestone reports do not substitute for this rebuild's evidence. Native screenshots/device checks are only claimed when actually executed.
+
+Working forms remain in the ViewModel while navigating within the app session; saving commits an immutable assessment/referral through the existing encrypted repository. Unfinished entries are not advertised as durable until saved. Server receipt and clinician acknowledgment remain separate and require their existing validated evidence.
+
 ## Build and test
 
 Use JDK 21 and Android SDK 35. The verified cached versions selected for this environment are AGP 8.7.3, Gradle 8.11.1, Kotlin/Compose plugin 2.0.21, Room 2.6.1 and Compose BOM 2024.10.01. Dependency versions are pinned in Gradle Kotlin DSL.

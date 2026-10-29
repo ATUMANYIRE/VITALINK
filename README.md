@@ -26,7 +26,7 @@ Prerequisites: JDK21, Maven3.9.x, PostgreSQL18, Node24, Android SDK35/Gradle8.11
 
 1. Follow [services/api/README.md](services/api/README.md) to initialize the project-local database, package the API and start it on **127.0.0.1:8087**. Runtime credentials are generated in ignored `services/api/.runtime/demo-credentials.json`; there are no fixed production credentials.
 2. Follow [apps/web/README.md](apps/web/README.md) to install dependencies, configure a random session key and start the real workspace at **http://localhost:3017** with API_BASE_URL=http://127.0.0.1:8087/api/v1.
-3. Build/run [Android](apps/android/README.md). Emulator debug API URL is http://10.0.2.2:8087/api/v1. Device-level execution status and APK availability are stated in the final audit.
+3. Build/run [Android](apps/android/README.md). Emulator debug API URL is http://10.0.2.2:8087/api/v1. The [native UI rebuild report](docs/ANDROID_UI_REBUILD.md) contains the current APK path, Android test evidence and actual device screenshots.
 4. Use a SYN-prefixed record and the runtime worker/doctor accounts. Follow [the three-minute demo](submission/DEMO_SCRIPT_3_MIN.md).
 
 Ports8080,3000,3007 belong to unrelated applications in this workspace; do not stop them.

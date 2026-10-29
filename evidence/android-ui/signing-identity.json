@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "apk": "apps/android/app/build/outputs/apk/debug/app-debug.apk",
+  "signerCertificateSha256": "e63f9713292861ca88c8aab4e0cc15968fc5afe5ea32ee4c908d201c1cd427e9",
+  "matchesExistingDebugIdentity": true,
+  "verification": [
+    "apksigner verify --print-certs app-debug.apk",
+    "keytool -list -keystore existing user debug.keystore -alias androiddebugkey"
+  ],
+  "scope": "Debug signing certificate comparison only. No existing device upgrade execution claimed. No signing key copied into source control."
+}

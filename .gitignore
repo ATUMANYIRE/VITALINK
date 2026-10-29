@@ -8,6 +8,7 @@
 **/build/
 **/target/
 **/.gradle/
+**/.kotlin/
 **/node_modules/
 **/.next/
 **/test-results/

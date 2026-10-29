@@ -1,0 +1,67 @@
+{
+  "source": "Android UiAutomation.takeScreenshot; actual running application",
+  "density": 2.75,
+  "fontScale": 1,
+  "captures": [
+    {
+      "file": "phone-01-welcome.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-02-home.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-03-intake.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-04-observations-urgent.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-05-warning-signs.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-06-review.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-07-referral-details.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-08-referral-progress.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-09-referrals.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-10-records.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-11-account.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    },
+    {
+      "file": "phone-12-privacy.png",
+      "widthPixels": 1080,
+      "heightPixels": 2340
+    }
+  ]
+}
