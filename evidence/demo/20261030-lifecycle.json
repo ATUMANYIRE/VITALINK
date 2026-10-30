@@ -1,0 +1,266 @@
+{
+  "recordingDateLocal": "2026-10-30",
+  "presenter": "Winny Darlen",
+  "status": "PASS",
+  "scope": "One real local synthetic Android/API/PostgreSQL/browser referral lifecycle",
+  "referralId": "d7c049eb-c5b4-458a-8c0e-9323bde84376",
+  "patientId": "SYN-DEMO-1793314308758",
+  "assertions": {
+    "workerSignedInBeforeOffline": true,
+    "airplaneModeVerified": true,
+    "pendingSyncObserved": true,
+    "restartPersistenceObserved": true,
+    "serverReceivedObserved": true,
+    "doctorAcknowledgmentObserved": true,
+    "mobileAcknowledgmentObserved": true
+  },
+  "acknowledgedBy": "doctor",
+  "acknowledgedAt": "2026-10-29T22:55:50.593855Z",
+  "nativePhases": [
+    {
+      "phase": "setup",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 31.633,
+      "evidence": "setup-instrumentation.txt"
+    },
+    {
+      "phase": "offline",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 63.228,
+      "evidence": "offline-instrumentation.txt"
+    },
+    {
+      "phase": "restart",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 24.451,
+      "evidence": "restart-instrumentation.txt"
+    },
+    {
+      "phase": "received",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 36.797,
+      "evidence": "received-instrumentation.txt"
+    },
+    {
+      "phase": "ack",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 30.598,
+      "evidence": "ack-instrumentation.txt"
+    },
+    {
+      "phase": "privacy",
+      "tests": 1,
+      "failures": 0,
+      "elapsedSeconds": 26.086,
+      "evidence": "privacy-instrumentation.txt"
+    }
+  ],
+  "nativePhasesPassed": 6,
+  "browserJourneysPassed": 1,
+  "browserEvents": [
+    {
+      "name": "Doctor sign-in screen",
+      "seconds": 2.206
+    },
+    {
+      "name": "Authenticated facility overview",
+      "seconds": 6.43
+    },
+    {
+      "name": "Live referral inbox",
+      "seconds": 10.605
+    },
+    {
+      "name": "Urgent referral queue",
+      "seconds": 13.741
+    },
+    {
+      "name": "Same referral identifier and server-received state",
+      "seconds": 18.319
+    },
+    {
+      "name": "Actual observations and deterministic rule explanation",
+      "seconds": 22.942
+    },
+    {
+      "name": "Explicit clinical action confirmation",
+      "seconds": 27.147
+    },
+    {
+      "name": "Server acknowledgment actor and timestamp verified",
+      "seconds": 31.205
+    }
+  ],
+  "android": {
+    "api": 30,
+    "resolution": "720x1560",
+    "densityDpi": 293,
+    "avd": "Vitalink_UI_API30",
+    "host": "Windows / WHPX",
+    "appSha256": "3129d428ee22e97975b5ed1992c10ff2f859abff323cd67866b9d0a95e392e6f"
+  },
+  "services": {
+    "api": "http://127.0.0.1:8087",
+    "web": "http://localhost:3017",
+    "database": "PostgreSQL 18, loopback 55432"
+  },
+  "video": {
+    "presenter": "Winny Darlen",
+    "language": "en",
+    "voice": "Microsoft Zira Desktop (synthesized)",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "durationSeconds": 180.2,
+    "sizeBytes": 5637256,
+    "sha256": "00f137c978be749a7fda8e367ccda309f206f9dda64172b14a3bcf5e17c9d0a3",
+    "editing": "Actual UI takes trimmed and time-adjusted for narration; not a latency benchmark.",
+    "fullDecode": "PASS",
+    "chapters": [
+      {
+        "id": 1,
+        "startSeconds": 0,
+        "durationSeconds": 14.533333333333333,
+        "title": "Maternal care, connected.",
+        "sourceEdits": [
+          {
+            "file": "01-welcome.mp4",
+            "inSeconds": 2.5,
+            "outSeconds": 15.82,
+            "playbackSpeed": 0.9165
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "startSeconds": 14.533,
+        "durationSeconds": 16.4,
+        "title": "Assessment, even offline.",
+        "sourceEdits": [
+          {
+            "file": "02-offline.mp4",
+            "inSeconds": 19.281,
+            "outSeconds": 28.462,
+            "playbackSpeed": 0.5598
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "startSeconds": 30.933,
+        "durationSeconds": 23.1,
+        "title": "Clinical warnings come first.",
+        "sourceEdits": [
+          {
+            "file": "02-offline.mp4",
+            "inSeconds": 28.462,
+            "outSeconds": 52.223,
+            "playbackSpeed": 1.0286
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "startSeconds": 54.033,
+        "durationSeconds": 18.266666666666666,
+        "title": "A durable, traceable handoff.",
+        "sourceEdits": [
+          {
+            "file": "02-offline.mp4",
+            "inSeconds": 52.223,
+            "outSeconds": 68.919,
+            "playbackSpeed": 0.914
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "startSeconds": 72.3,
+        "durationSeconds": 13.366666666666667,
+        "title": "Committed records survive restart.",
+        "sourceEdits": [
+          {
+            "file": "05-restart.mp4",
+            "inSeconds": 11.534,
+            "outSeconds": 25.034,
+            "playbackSpeed": 1.01
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "startSeconds": 85.667,
+        "durationSeconds": 17.3,
+        "title": "Connectivity returns.",
+        "sourceEdits": [
+          {
+            "file": "06-server-received.mp4",
+            "inSeconds": 32.35,
+            "outSeconds": 45.59,
+            "playbackSpeed": 0.7653
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "startSeconds": 102.967,
+        "durationSeconds": 18.866666666666667,
+        "title": "The receiving clinician can review.",
+        "sourceEdits": [
+          {
+            "file": "07-doctor.webm",
+            "inSeconds": 6.43,
+            "outSeconds": 33.205,
+            "playbackSpeed": 1.4192
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "startSeconds": 121.833,
+        "durationSeconds": 22.766666666666666,
+        "title": "Explicit acknowledgment closes the loop.",
+        "sourceEdits": [
+          {
+            "file": "08-mobile-acknowledgment.mp4",
+            "inSeconds": 17.34,
+            "outSeconds": 30.585,
+            "playbackSpeed": 0.5818
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "startSeconds": 144.6,
+        "durationSeconds": 16.833333333333332,
+        "title": "Privacy and engineering evidence.",
+        "sourceEdits": [
+          {
+            "file": "09-privacy.mp4",
+            "inSeconds": 12.946,
+            "outSeconds": 26.446,
+            "playbackSpeed": 0.802
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "startSeconds": 161.433,
+        "durationSeconds": 18.7,
+        "title": "VITALINK",
+        "sourceEdits": []
+      }
+    ]
+  },
+  "limitations": [
+    "Local synthetic demonstration; no clinical validation or patient outcome evidence.",
+    "Edited and time-adjusted UI footage; elapsed video time is not a performance benchmark.",
+    "One setup phase and five subsequent native phases; separate from the historical 70 JVM / 20 device test run.",
+    "An initial recording failed on a test dialog-scroll helper and had a System UI ANR. The helper was fixed, System UI restarted, and the affected take was discarded.",
+    "No physical-device, public-deployment, Docker-engine or clinical-model validation claim."
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">VITALINK Protective Embrace</title>
+  <rect width="100" height="100" rx="18" fill="#FFFFFF"/>
+  <path d="M28 72C18 58 20 36 38 24C54 13 74 19 80 36C83 48 76 64 62 76" fill="none" stroke="#164C3F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 60C36 52 38 42 46 37C55 32 63 34 66 44C67 51 61 58 54 63" fill="none" stroke="#E9A4B7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="53" cy="50" r="3.75" fill="#E9A4B7"/>
+</svg>

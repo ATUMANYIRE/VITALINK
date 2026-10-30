@@ -1,0 +1,82 @@
+[
+  {
+    "file": "01-welcome.png",
+    "source": "evidence/android-ui/screenshots/native-live/welcome.png",
+    "bytes": 155303,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "86537bc28ff63ca8b8f0242d4ecd706c473690f67f07bfd49d08c22f01b8e338",
+    "caption": "Native Android welcome: maternal assessment and referral coordination, including offline use.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "02-offline-home.png",
+    "source": "evidence/android-ui/screenshots/native-live/standard-home.png",
+    "bytes": 161115,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "ae9739832ecf7fb1771b00340229e76a057696a385b19a01bcb22211562080d0",
+    "caption": "Android home with a pending synthetic referral; connectivity is distinct from confirmed delivery.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "03-urgent-blood-pressure.png",
+    "source": "evidence/android-ui/screenshots/phone-final/phone-final-04-observations-urgent.png",
+    "bytes": 154483,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "5d57ef1c21810ddb5c95bf6d11a750243aee818edb5372f5107fc75204c61436",
+    "caption": "Synthetic BP 160/90 mmHg triggers immediate on-device urgent clinical assessment messaging.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "04-referral-pending.png",
+    "source": "evidence/android-ui/screenshots/phone-final/phone-final-07-referral-details.png",
+    "bytes": 182357,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "8a6d2909df08eca651ba9340244d1a1e6099d946e9298c83320c1078a26b06a8",
+    "caption": "Locally saved referral clearly shows pending synchronization and unconfirmed delivery.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "05-offline-handoff.png",
+    "source": "evidence/android-ui/screenshots/phone-final/phone-final-13-offline-handoff-summary.png",
+    "bytes": 197998,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "8256288fb1988633ad7697660c2f0014cb1d931da013c9dbd6ca6083f6cc4ceb",
+    "caption": "Offline handoff summary includes observations, rule version and explicit unconfirmed delivery status.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "06-assessment-records.png",
+    "source": "evidence/android-ui/screenshots/phone-final/phone-final-10-records.png",
+    "bytes": 150979,
+    "width": 1080,
+    "height": 2340,
+    "sha256": "87dca597119a5c5b6365e6e3359984944774b2d9880770a01e563b9ab6879f64",
+    "caption": "Saved synthetic assessment history remains available on the device.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "07-doctor-overview.png",
+    "source": "apps/web/evidence/overview-desktop.png",
+    "bytes": 175722,
+    "width": 1440,
+    "height": 1925,
+    "sha256": "18ca956a14ea87e47e606e12da7bb03d9be0b40c13614fc1d6c748bd84930558",
+    "caption": "Doctor workspace with facility-scoped synthetic referral records; all counts are demonstration fixtures.",
+    "unchangedOriginal": true
+  },
+  {
+    "file": "08-doctor-referral.png",
+    "source": "apps/web/evidence/referral-desktop.png",
+    "bytes": 138017,
+    "width": 1440,
+    "height": 1680,
+    "sha256": "b5bc45bd30a4871e0fb3456da86643e9c608087babe0cdb9f74aaaf06d647751",
+    "caption": "Doctor referral details show safety-rule triggers, stored observations and an explicit acknowledgment action.",
+    "unchangedOriginal": true
+  }
+]

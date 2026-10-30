@@ -2,6 +2,14 @@
 
 This document records all executed verification commands, exit codes, exact test counts, and artifact paths across every component of VITALINK.
 
+## 30 October 2026 — Recorded local demonstration
+
+The final native presentation APK (SHA-256 `3129d428ee22e97975b5ed1992c10ff2f859abff323cd67866b9d0a95e392e6f`) was exercised against the actual Java API, PostgreSQL and production-built Next.js workspace. Six opt-in `DemoRecordingTest` phases passed individually: authorized worker sign-in, airplane-mode urgent assessment and offline save, force-stop/restart persistence, server receipt, mobile acknowledgment readback, and privacy UI. One real Playwright browser journey reviewed and explicitly acknowledged that same referral. The acknowledgment actor and timestamp matched exactly across server and Android.
+
+Evidence and per-phase JUnit outputs: [evidence/demo/20261030-lifecycle.json](../evidence/demo/20261030-lifecycle.json). Commands: `python scripts/demo/record_mobile.py <phase> --adb <absolute-adb-path>` and `node scripts/demo/record_doctor.mjs`. The opt-in native recording class skips without its host-coordinated argument; these six phase executions are separate from the previously recorded 70 JVM / 20 native presentation tests.
+
+An initial take failed because the recording helper tried to scroll a dialog button without a scroll parent; its helper was corrected. That take also showed a System UI ANR and was excluded. The private emulator graphics profile was reduced, System UI restarted, and all final phases passed. No production clinical rules were changed. Final media is edited for narration, with genuine UI footage, synthetic identifiers, and no clinical or device-performance claim. See [video production details](../submission/video/README.md).
+
 ---
 
 ## 1. Summary Table

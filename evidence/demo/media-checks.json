@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "file": "submission/video/VITALINK_Demo_Winny_Darlen.mp4",
+  "durationSeconds": 180.2,
+  "videoCodec": "H.264 High",
+  "pixelFormat": "yuv420p",
+  "resolution": "1920x1080",
+  "framesPerSecond": 30,
+  "audioCodec": "AAC LC",
+  "audioSampleRateHz": 48000,
+  "audioChannels": 2,
+  "decodedMeanAudioVolumeDb": -19.7,
+  "decodedMaximumAudioVolumeDb": -4.3,
+  "completeSampleAlignedNarrationSentences": 30,
+  "sceneDurationChecks": "All ten encoded scene durations match the caption/audio timeline within 0.04 seconds.",
+  "fullDecode": "PASS",
+  "visualReview": "Inspected rendered intro, safety warning, offline summary, doctor queue/acknowledgment, Android acknowledged state, privacy and closing frames. Corrected a clipped web subtitle before final rendering. Failed System UI ANR take excluded.",
+  "audioCheckScope": "Original synthesized sentence PCM is present sample-aligned in the narration mix; final AAC decodes without error and has measured nonclipping levels. This is technical verification, not a human listening review.",
+  "commands": [
+    "python scripts/demo/render_demo.py --ffmpeg <local-ffmpeg-executable>",
+    "python scripts/demo/verify_demo.py",
+    "ffmpeg -hide_banner -i submission/video/VITALINK_Demo_Winny_Darlen.mp4 -af volumedetect -vn -f null -"
+  ]
+}

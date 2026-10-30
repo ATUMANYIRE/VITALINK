@@ -1,0 +1,132 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.884
+VITALINK. Maternal care, connected.
+
+2
+00:00:05.044 --> 00:00:09.753
+Presented by Winny Darlen for Health Hackathon three point zero.
+
+3
+00:00:09.913 --> 00:00:13.872
+This research prototype uses synthetic records.
+
+4
+00:00:14.883 --> 00:00:19.272
+We start on the native Android app with airplane mode enabled.
+
+5
+00:00:19.432 --> 00:00:25.096
+The health worker records a synthetic patient identifier and gestational age.
+
+6
+00:00:25.256 --> 00:00:30.259
+Assessment and local safety rules remain available without connectivity.
+
+7
+00:00:31.283 --> 00:00:37.917
+At one hundred sixty over ninety, the on-device rules request urgent clinical
+assessment.
+
+8
+00:00:38.077 --> 00:00:46.955
+Severe systolic or diastolic pressure is sufficient. Concerning symptoms also
+remain urgent with normal blood pressure.
+
+9
+00:00:47.115 --> 00:00:53.358
+Follow local escalation procedures now. Do not wait for synchronization.
+
+10
+00:00:54.383 --> 00:01:01.682
+The assessment is saved as an immutable encrypted snapshot, linked to one stable
+referral identifier.
+
+11
+00:01:01.842 --> 00:01:05.351
+Pending sync means delivery is unconfirmed.
+
+12
+00:01:05.511 --> 00:01:11.639
+The offline summary supports established telephone or in-person handoff
+procedures.
+
+13
+00:01:12.650 --> 00:01:14.774
+We restart the app.
+
+14
+00:01:14.934 --> 00:01:19.173
+The committed referral and its pending status remain available.
+
+15
+00:01:19.333 --> 00:01:25.001
+Encrypted local storage and a transactional outbox support durable recovery.
+
+16
+00:01:26.017 --> 00:01:33.550
+Connectivity is restored. The authorized health-worker session can synchronize
+the pending referral.
+
+17
+00:01:33.710 --> 00:01:37.979
+The backend confirms receipt using the same identifier.
+
+18
+00:01:38.139 --> 00:01:42.303
+The app still shows that a clinician has not acknowledged it.
+
+19
+00:01:43.317 --> 00:01:50.320
+The doctor workspace retrieves that same referral from the real API and
+PostgreSQL database.
+
+20
+00:01:50.480 --> 00:01:57.848
+It shows the stored observations, versioned rule triggers and status history
+within the authorized facility.
+
+21
+00:01:58.008 --> 00:02:01.147
+No predictive risk score is invented.
+
+22
+00:02:02.183 --> 00:02:07.292
+The clinician explicitly confirms acknowledgment in the doctor workspace.
+
+23
+00:02:07.452 --> 00:02:10.896
+The server records the actor and timestamp.
+
+24
+00:02:11.056 --> 00:02:16.659
+Refreshing Android brings that confirmed acknowledgment back to the original
+referral.
+
+25
+00:02:16.819 --> 00:02:23.923
+This records coordination. Patient care and outcomes require separate clinical
+follow-up.
+
+26
+00:02:24.950 --> 00:02:29.254
+Clinical payloads use Android Keystore-backed encryption.
+
+27
+00:02:29.414 --> 00:02:40.756
+The latest Android release passed seventy JVM tests and twenty emulator
+instrumentation tests, with separate migration, restart and recovery checks.
+
+28
+00:02:41.783 --> 00:02:50.696
+The current release is rules only. No validated predictive model, diagnosis or
+medication advice is provided.
+
+29
+00:02:50.856 --> 00:02:55.230
+Clinical review and field validation remain future work.
+
+30
+00:02:55.390 --> 00:02:59.469
+VITALINK. Presented by Winny Darlen.

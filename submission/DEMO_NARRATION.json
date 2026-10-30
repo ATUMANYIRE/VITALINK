@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "duration": 12,
+    "title": "Maternal care, connected.",
+    "subtitle": "Presented by Winny Darlen",
+    "source": "01-welcome.mp4",
+    "sentences": [
+      "VITALINK. Maternal care, connected.",
+      "Presented by Winny Darlen for Health Hackathon three point zero.",
+      "This research prototype uses synthetic records."
+    ]
+  },
+  {
+    "id": 2,
+    "duration": 20,
+    "title": "Assessment, even offline.",
+    "subtitle": "Airplane mode enabled",
+    "source": "02-offline.mp4",
+    "sentences": [
+      "We start on the native Android app with airplane mode enabled.",
+      "The health worker records a synthetic patient identifier and gestational age.",
+      "Assessment and local safety rules remain available without connectivity."
+    ],
+    "startMarker": "intake",
+    "endMarker": "safety"
+  },
+  {
+    "id": 3,
+    "duration": 22,
+    "title": "Clinical warnings come first.",
+    "subtitle": "Deterministic rules run on device",
+    "source": "02-offline.mp4",
+    "sentences": [
+      "At one hundred sixty over ninety, the on-device rules request urgent clinical assessment.",
+      "Severe systolic or diastolic pressure is sufficient. Concerning symptoms also remain urgent with normal blood pressure.",
+      "Follow local escalation procedures now. Do not wait for synchronization."
+    ],
+    "startMarker": "safety",
+    "endMarker": "referral"
+  },
+  {
+    "id": 4,
+    "duration": 20,
+    "title": "A durable, traceable handoff.",
+    "subtitle": "Pending sync means delivery is unconfirmed",
+    "source": "02-offline.mp4",
+    "sentences": [
+      "The assessment is saved as an immutable encrypted snapshot, linked to one stable referral identifier.",
+      "Pending sync means delivery is unconfirmed.",
+      "The offline summary supports established telephone or in-person handoff procedures."
+    ],
+    "startMarker": "referral",
+    "endMarker": "offline-complete"
+  },
+  {
+    "id": 5,
+    "duration": 14,
+    "title": "Committed records survive restart.",
+    "subtitle": "Assessment, referral and outbox persist together",
+    "source": "05-restart.mp4",
+    "sentences": [
+      "We restart the app.",
+      "The committed referral and its pending status remain available.",
+      "Encrypted local storage and a transactional outbox support durable recovery."
+    ]
+  },
+  {
+    "id": 6,
+    "duration": 20,
+    "title": "Connectivity returns.",
+    "subtitle": "Server receipt is a separate confirmed state",
+    "source": "06-server-received.mp4",
+    "sentences": [
+      "Connectivity is restored. The authorized health-worker session can synchronize the pending referral.",
+      "The backend confirms receipt using the same identifier.",
+      "The app still shows that a clinician has not acknowledged it."
+    ]
+  },
+  {
+    "id": 7,
+    "duration": 20,
+    "title": "The receiving clinician can review.",
+    "subtitle": "Real API, PostgreSQL and facility-scoped workspace",
+    "source": "07-doctor.webm",
+    "sentences": [
+      "The doctor workspace retrieves that same referral from the real API and PostgreSQL database.",
+      "It shows the stored observations, versioned rule triggers and status history within the authorized facility.",
+      "No predictive risk score is invented."
+    ]
+  },
+  {
+    "id": 8,
+    "duration": 22,
+    "title": "Explicit acknowledgment closes the loop.",
+    "subtitle": "Clinician action, actor and timestamp",
+    "source": "08-mobile-acknowledgment.mp4",
+    "sentences": [
+      "The clinician explicitly confirms acknowledgment in the doctor workspace.",
+      "The server records the actor and timestamp.",
+      "Refreshing Android brings that confirmed acknowledgment back to the original referral.",
+      "This records coordination. Patient care and outcomes require separate clinical follow-up."
+    ]
+  },
+  {
+    "id": 9,
+    "duration": 14,
+    "title": "Privacy and engineering evidence.",
+    "subtitle": "70 JVM tests + 20 Android instrumentation tests",
+    "source": "09-privacy.mp4",
+    "sentences": [
+      "Clinical payloads use Android Keystore-backed encryption.",
+      "The latest Android release passed seventy JVM tests and twenty emulator instrumentation tests, with separate migration, restart and recovery checks."
+    ]
+  },
+  {
+    "id": 10,
+    "duration": 16,
+    "title": "VITALINK",
+    "subtitle": "Winny Darlen",
+    "source": null,
+    "sentences": [
+      "The current release is rules only. No validated predictive model, diagnosis or medication advice is provided.",
+      "Clinical review and field validation remain future work.",
+      "VITALINK. Presented by Winny Darlen."
+    ]
+  }
+]

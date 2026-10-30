@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "candidateFilesScanned": 383,
+  "secretFindings": 0,
+  "missingRootReadmeLinks": 0,
+  "unchangedGalleryImages": 8,
+  "completeSampleAlignedNarrationSentences": 30,
+  "videoSha256": "00f137c978be749a7fda8e367ccda309f206f9dda64172b14a3bcf5e17c9d0a3",
+  "videoBytes": 5637256,
+  "notes": "Current Git candidates checked against exact local fixture secrets and common private-key/token patterns; not a comprehensive security certification."
+}

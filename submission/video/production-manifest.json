@@ -1,0 +1,147 @@
+{
+  "presenter": "Winny Darlen",
+  "language": "en",
+  "voice": "Microsoft Zira Desktop (synthesized)",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "durationSeconds": 180.2,
+  "sizeBytes": 5637256,
+  "sha256": "00f137c978be749a7fda8e367ccda309f206f9dda64172b14a3bcf5e17c9d0a3",
+  "editing": "Actual UI takes trimmed and time-adjusted for narration; not a latency benchmark.",
+  "fullDecode": "PASS",
+  "chapters": [
+    {
+      "id": 1,
+      "startSeconds": 0,
+      "durationSeconds": 14.533333333333333,
+      "title": "Maternal care, connected.",
+      "sourceEdits": [
+        {
+          "file": "01-welcome.mp4",
+          "inSeconds": 2.5,
+          "outSeconds": 15.82,
+          "playbackSpeed": 0.9165
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "startSeconds": 14.533,
+      "durationSeconds": 16.4,
+      "title": "Assessment, even offline.",
+      "sourceEdits": [
+        {
+          "file": "02-offline.mp4",
+          "inSeconds": 19.281,
+          "outSeconds": 28.462,
+          "playbackSpeed": 0.5598
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "startSeconds": 30.933,
+      "durationSeconds": 23.1,
+      "title": "Clinical warnings come first.",
+      "sourceEdits": [
+        {
+          "file": "02-offline.mp4",
+          "inSeconds": 28.462,
+          "outSeconds": 52.223,
+          "playbackSpeed": 1.0286
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "startSeconds": 54.033,
+      "durationSeconds": 18.266666666666666,
+      "title": "A durable, traceable handoff.",
+      "sourceEdits": [
+        {
+          "file": "02-offline.mp4",
+          "inSeconds": 52.223,
+          "outSeconds": 68.919,
+          "playbackSpeed": 0.914
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "startSeconds": 72.3,
+      "durationSeconds": 13.366666666666667,
+      "title": "Committed records survive restart.",
+      "sourceEdits": [
+        {
+          "file": "05-restart.mp4",
+          "inSeconds": 11.534,
+          "outSeconds": 25.034,
+          "playbackSpeed": 1.01
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "startSeconds": 85.667,
+      "durationSeconds": 17.3,
+      "title": "Connectivity returns.",
+      "sourceEdits": [
+        {
+          "file": "06-server-received.mp4",
+          "inSeconds": 32.35,
+          "outSeconds": 45.59,
+          "playbackSpeed": 0.7653
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "startSeconds": 102.967,
+      "durationSeconds": 18.866666666666667,
+      "title": "The receiving clinician can review.",
+      "sourceEdits": [
+        {
+          "file": "07-doctor.webm",
+          "inSeconds": 6.43,
+          "outSeconds": 33.205,
+          "playbackSpeed": 1.4192
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "startSeconds": 121.833,
+      "durationSeconds": 22.766666666666666,
+      "title": "Explicit acknowledgment closes the loop.",
+      "sourceEdits": [
+        {
+          "file": "08-mobile-acknowledgment.mp4",
+          "inSeconds": 17.34,
+          "outSeconds": 30.585,
+          "playbackSpeed": 0.5818
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "startSeconds": 144.6,
+      "durationSeconds": 16.833333333333332,
+      "title": "Privacy and engineering evidence.",
+      "sourceEdits": [
+        {
+          "file": "09-privacy.mp4",
+          "inSeconds": 12.946,
+          "outSeconds": 26.446,
+          "playbackSpeed": 0.802
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "startSeconds": 161.433,
+      "durationSeconds": 18.7,
+      "title": "VITALINK",
+      "sourceEdits": []
+    }
+  ]
+}
