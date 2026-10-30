@@ -49,4 +49,3 @@ Doctor workspace with facility-scoped synthetic referral records; all counts are
 Doctor referral details show safety-rule triggers, stored observations and an explicit acknowledgment action.
 
 1440x1680 pixels; 138,017 bytes.
-
